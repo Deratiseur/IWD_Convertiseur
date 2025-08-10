@@ -14,7 +14,7 @@ Ce module vous permet d'installer sur IWDEE certains mods prévus pour BG2EE. Il
 2 : Installez le IWDisateur. Il prépare tous les mods.  
 3 : Installez tous les mods pour BG2EE que vous avez prévus. Ils sont prêts.  
 
-### <ins>Modules que le IWDisateur peut convertir et où ils débutent :<ins>
+### <ins>Modules que le IWDisateur peut convertir :<ins>
 #### <ins>Marchands :<ins>
 - <a href=https://akadis.baldursgateworld.fr/Mystigan/MystiganFr.html>Mystigan the merchant</a>  
 - <a href=https://github.com/Spellhold-Studios/Unusual-Oddities-Shop>The Unusual Oddities Shop</a>  
@@ -65,7 +65,7 @@ This module allows you to install certain mods designed for BG2EE on IWDEE. It w
 2: Install the IWDisator. It prepares all the mods.  
 3: Install all the mods for BG2EE that you have planned. They are ready. 
 
-### <ins>Modules that the Iwdisateur can convert and where they start:<ins>
+### <ins>Modules that the Iwdisateur can convert:<ins>
 #### <ins>Shops:<ins>
 - <a href=https://akadis.baldursgateworld.fr/Mystigan/MystiganFr.html>Mystigan the merchant</a>  
 - <a href=https://github.com/Spellhold-Studios/Unusual-Oddities-Shop>The Unusual Oddities Shop</a>  
