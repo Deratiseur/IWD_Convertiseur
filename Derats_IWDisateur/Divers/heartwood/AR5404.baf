@@ -1,0 +1,11 @@
+IF
+	Global("pxheartw","GLOBAL",0)
+	AreaCheck("AR5404")
+THEN
+	RESPONSE #100
+		SetGlobal("pxheartw","GLOBAL",1)
+		CreateCreature("tdr10a",[158.702],SW)
+		OpenDoor("AR5404Door1")
+		OpenDoor("AR5404Door2")
+		OpenDoor("AR5404Door3")
+END
