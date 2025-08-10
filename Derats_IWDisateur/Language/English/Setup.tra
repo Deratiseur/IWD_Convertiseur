@@ -1,0 +1,203 @@
+@0 = ~Prepare mods planned for BG2EE so that they can be used on IWDEE.~
+
+/////////////Tower of Deception
+@3 = ~Orc Archer~
+@4 = ~Demon Fear~ //39397
+
+/////////////Dungeon Crawl
+@5 = ~Clay Golem~
+@6 = ~Stone Golem~
+
+/////////////Ooze lounge
+@7 = ~Small discreet entrance~
+@8 = ~Green Ooze~
+@9 = ~Mustard Jelly~
+@10 = ~The Jester's Folly~
+@11 = ~Ring of Clumsiness: The Jester's Folly
+The most notorious owner of this ring made a substantial living exploiting its cursed nature. Gregoria the Foole, a Jester by trade, would use his incomparable sleight of hand to switch this ring with that of a patsy taken from his audience. The rest of his performance would involve the mocking of the newly clumsy individual, much to the delight of their comrades. The ring was removed (by a method known only to the wily Jester) only once the stooge had promised no reprisals for the treatment he had received, though Gregoria frequently still had to make a hasty retreat. His last known performance was rumored to have been an ill-humored mage in Zhentil Keep: a show from which he did not flee quite fast enough.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: -50%
+– Stealth: -50%
+– 75% chance of spellcasting failure
+– May only be removed with a Remove Curse spell
+
+Weight: 0~
+@12 = ~Longbow +2~
+@13 = ~L'arc long est très similaire à l'arc court, si ce n'est qu'il est beaucoup plus grand, à peu près de la taille de l'archer. Sa fréquence de tir est inférieure, mais dispose d'une plus grande portée et d'une précision accrue. Le bois de cet arc est chaud au toucher, preuve de l'existence de l'énergie qui le parcourt.
+
+PARAMÈTRES :
+
+TAC0 : +3
+Facteur de vitesse : 5
+Type de compétence : arc long
+Type : arme à deux mains
+Nécessite : 6 en Force
+
+Poids : 3~
+@14 = ~Arc court +2~
+@15 = ~The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor. The smooth staff of this bow is warm to the touch, just a hint of the energy that surges through the wood.
+
+STATISTICS:
+
+THAC0: +3
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3~
+@16 = ~Two-handed Sword +2~
+@17 = ~A derivative of the long sword, the two-handed sword is significantly longer, both in blade and hilt. Its primary function is cleaving mounted knights and breaking up pike formations. This magical version is even more capable of such functions, serving as a fearful reminder of what comes of the union between weapons and sorcery.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d10+2 (slashing)
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 10~
+@18 = ~Scimitar +1~ 
+@19 = ~The scimitar, or "shamshir" as it was originally called, has a single-edged blade with a significant curve and is tapered to an elongated, sharp point. It is perhaps slower than other weapons of the same type, though it compensates by the amount of damage it is capable of. This particular weapon has been enhanced magically to complement the skill of the wielder.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d8+1 (slashing)
+Speed Factor: 4
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 3~
+@20 = ~Light Crossbow +2~
+@21 = ~A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). This magical crossbow is elegant and light in the hand, with little recoil.
+
+STATISTICS:
+
+THAC0: +2
+Damage: +2 (missile)
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5~
+@22 = ~Wolfsbane Charm~
+@23 = ~A silver amulet containing powdered wolfsbane.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2 vs. lycanthropes
+– Damage: +2 vs. lycanthropes
+
+Weight: 3~
+@24 = ~Wand of Polymorphing~
+@25 = ~This wand emits a thin, green beam that darts forth to a maximum distance of 5 ft. Any creature touched by this beam must make a Save vs. Wand or be polymorphed into a squirrel.
+
+STATISTICS:
+
+Charge abilities:
+– Polymorph target into squirrel (Save vs. Wand negates)
+  Range: 5 ft.
+  Area of Effect: 1 creature
+  Duration: Permanent (until dispelled)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+@26 = ~Long Sword +2~
+@27 = ~A sword of standardized enchantment, powerful though it is. The great southern nations are said to have once had legions of their soldiers armed in such a fashion, a force that must have appeared truly imposing on the battlefield. The days of such extravagance are long past though.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3~
+@28 = ~Long Sword +3~
+@29 = ~These swords are usually referred to as double-edged swords, war swords, or military swords. The blade hums slightly in your hand, the only overt evidence that magic runs through it.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d8+3 (slashing)
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 2~
+@30 = ~Katana +3~
+@31 = ~To enchant a katana is no simple process. Unlike conventional weapons, the katana is already a near-perfect fighting sword. To improve it usually requires a sacrifice; perhaps a dying samurai might beg a Wu Jen to infuse his fighting spirit into the spirit of the katana. The wielder of an enchanted katana, such as this one, must respect the customs of Kara-Tur and of the samurai who once carried this blade into battle. Not doing so could drastically change one's luck for the worse.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d10+3 (slashing)
+Speed Factor: 1
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3~
+@32 = ~The Eyes of Truth~ //6810
+@33 = ~Helm of Infravision: The Eyes of Truth 
+Being a scavenger of a sort, Babette Maelestrom had this helm created to aid her in her dungeon excursions. She would later attribute her gathered wealth solely to its power, though likely it was as much her keen eyes as anything.
+
+STATISTICS:
+
+Equipped abilities:
+– Infravision up to 120 ft.
+– Protects against critical hits
+
+Weight: 3~ //7397
+
+/////////////The Sellsword
+@34 = ~Prêtresse Elfe noire~ //165
+@35 = ~Elfe noir guerrier~ //52583
+@36 = ~Elfe noir~ //50900
+@38 = ~Yochlol~
+@39 = ~Jarlaxle~
+@40 = ~Chef Elfe noir~ //56914
+@41 = ~Golem Cerveau~ //8447
+@42 = ~Elfe noir magicien~  //52916
+@43 = ~Duergar~
+@44 = ~Ombre démoniaque~  //70866
+@45 = ~Démombre~ //57736
+@46 = ~Bourreau Elfe noir~
+@47 = ~Démon~ //47510
+@48 = ~Golem magique~ //68642
+@49 = ~Elfe noir barman~ //50928
+
+/////////////DGItems
+@50 = ~The Specter's Ring~
+@51 = ~Ring of Improved Invisibility: The Specter's Ring
+A ruthless assassin of Tethyr known only as the Specter used this ring to great effect many years ago. Striking completely unseen, his victims' demises were often attributed to angry ghosts and spirits.
+
+STATISTICS:
+
+Charge abilities:
+– Improved Invisibility once per day
+  Duration: 12 hours
+  Area of Effect: The user
+
+Weight: 0~

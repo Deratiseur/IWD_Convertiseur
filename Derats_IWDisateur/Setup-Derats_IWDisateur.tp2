@@ -1,0 +1,878 @@
+BACKUP ~Derats_IWDisateur/Backup~
+AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
+VERSION ~v1~
+
+LANGUAGE ~Francais~
+	~French~
+	~Derats_IWDisateur/Language/French/Setup.tra~
+LANGUAGE ~English~
+	~English~
+	~Derats_IWDisateur/Language/English/Setup.tra~
+
+BEGIN @0	DESIGNATED 0	LABEL Px_IWDisateur	
+
+DEFINE_PATCH_FUNCTION No_Banters BEGIN
+REPLACE_TEXTUALLY ~NALIAJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~ANOMENJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~JAHEIRAJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~MINSCJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~AERIEJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~KORGANJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~YOSHJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~MAZZYJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~VICONIJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~KELDORJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~EDWINJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~JANJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~CERNDJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~VALYGARJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~IMOEN2J~ ~DCHALC~
+REPLACE_TEXTUALLY ~HAERDAJ~ ~DCHALC~
+REPLACE_TEXTUALLY ~BNALIA~ ~DCHALC~
+REPLACE_TEXTUALLY ~BANOMEN~ ~DCHALC~
+REPLACE_TEXTUALLY ~BJAHEIRA~ ~DCHALC~
+REPLACE_TEXTUALLY ~BMINSC~ ~DCHALC~
+REPLACE_TEXTUALLY ~BAERIE~ ~DCHALC~
+REPLACE_TEXTUALLY ~BKORGAN~ ~DCHALC~
+REPLACE_TEXTUALLY ~BYOSHIM~ ~DCHALC~
+REPLACE_TEXTUALLY ~BMAZZY~ ~DCHALC~
+REPLACE_TEXTUALLY ~BVICONI~ ~DCHALC~
+REPLACE_TEXTUALLY ~BKELDOR~ ~DCHALC~
+REPLACE_TEXTUALLY ~BEDWIN~ ~DCHALC~
+REPLACE_TEXTUALLY ~BJAN~ ~DCHALC~
+REPLACE_TEXTUALLY ~BCERND~ ~DCHALC~
+REPLACE_TEXTUALLY ~BVALYGA~ ~DCHALC~
+REPLACE_TEXTUALLY ~BHAERDA~ ~DCHALC~
+END
+
+///////////////////////////  Magasins  ///////////////////////////
+
+ACTION_IF DIRECTORY_EXISTS ~abystore~ BEGIN //The Unusual Oddities Shop
+COPY ~Abystore/abystore.tp2~ ~Abystore/abystore.tp2~
+REPLACE_TEXTUALLY ~ar0300.bcs~ ~ar2100.bcs~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+COPY ~Abystore/baf/abyarea.baf~ ~Abystore/baf/abyarea.baf~
+REPLACE_TEXTUALLY ~0300~ ~2100~
+REPLACE_TEXTUALLY ~2859.1262],5~ ~2718.1076],S~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~underrep~ BEGIN //Under-Represented Items
+COPY ~underrep/setup-underrep.tp2~ ~underrep/setup-underrep.tp2~
+REPLACE_TEXTUALLY ~bg2ee~ ~bg2ee iwdee~
+REPLACE_TEXTUALLY ~ar0702.bcs~ ~ar2103.bcs~
+REPLACE_TEXTUALLY ~ar3000.bcs~ ~ar9100.bcs~
+REPLACE_TEXTUALLY ~wmart1.cre~ ~Whitcomb.cre~
+COPY ~underrep/baf/ar0702.baf~ ~underrep/baf/ar0702.baf~
+REPLACE_TEXTUALLY ~AR0702~ ~AR2103~
+REPLACE_TEXTUALLY ~761.331~ ~440.283~
+COPY ~underrep/baf/ar0702.baf~ ~underrep/baf/ar3000.baf~
+REPLACE_TEXTUALLY ~AR2103~ ~AR9100~
+REPLACE_TEXTUALLY ~440.283~ ~2070.2806~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~rttitempack~ BEGIN //RTT item pack
+COPY ~rttitempack/rttitempack.tp2~ ~rttitempack/rttitempack.tp2~
+REPLACE_TEXTUALLY ~ribald3~ ~kieran2~
+REPLACE_TEXTUALLY ~WALLACE~ ~EDION~
+REPLACE_TEXTUALLY ~TRMER02~ ~WAUKINE~
+REPLACE_TEXTUALLY ~BLUN22~ ~MAE~
+REPLACE_TEXTUALLY ~SW1H33~ ~AMAUNAT~
+REPLACE_TEXTUALLY ~TRMER01~ ~EMMERIC~
+REPLACE_TEXTUALLY "COPY ~rttitempack/Store/RTTSTO.sto~ ~override/RTTuh01.sto~" "COPY_EXISTING ~LDD_BEOR.sto~ ~override~"
+REPLACE_TEXTUALLY "COPY ~rttitempack/Store/RTTSTO.sto~ ~override/RTTuh02.sto~" "COPY_EXISTING ~LDD_NYM.sto~ ~override~"
+REPLACE_TEXTUALLY "COPY ~rttitempack/Store/RTTSTO.sto~ ~override/RTTuh03.sto~" "COPY_EXISTING ~LDD_DL1.sto~ ~override~"
+END
+
+ACTION_IF DIRECTORY_EXISTS ~Mystigan~ BEGIN //Mystigan
+COPY ~Mystigan/Setup-Mystigan.tp2~ ~Mystigan/Setup-Mystigan.tp2~
+REPLACE_TEXTUALLY ~AR1000.bcs~ ~ar2100.bcs~
+COPY ~Mystigan/Script/E_1000.baf~ ~Mystigan/Script/E_1000.baf~
+REPLACE_TEXTUALLY ~2435.2550~ ~1601.2434~
+COPY ~Mystigan/item/Bag/E_BGem1.itm~ ~Mystigan/item/bag~
+	~Mystigan/item/bag/E_BGem2.itm~		~Mystigan/item/bag~
+	~Mystigan/item/bag/E_BGem3.itm~		~Mystigan/item/bag~	SAY NAME2 #35446	SAY DESC #35448
+COPY ~Mystigan/item/bag/E_BHold1.itm~ ~Mystigan/item/bag~
+	~Mystigan/item/bag/E_BHold2.itm~ ~Mystigan/item/bag~
+	~Mystigan/item/bag/E_BHold3.itm~ ~Mystigan/item/bag~	SAY NAME2 #35452	SAY DESC #35454
+COPY ~Mystigan/item/bag/E_BMiss1.itm~ ~Mystigan/item/bag~
+	~Mystigan/item/bag/E_BMiss2.itm~ ~Mystigan/item/bag~
+	~Mystigan/item/bag/E_BMiss3.itm~ ~Mystigan/item/bag~	SAY NAME2 #35455	SAY DESC #35457
+COPY ~Mystigan/item/bag/E_BPotn1.itm~ ~Mystigan/item/bag~
+	~Mystigan/item/bag/E_BPotn2.itm~ ~Mystigan/item/bag~
+	~Mystigan/item/bag/E_BPotn3.itm~ ~Mystigan/item/bag~	SAY NAME2 #35458	SAY DESC #35460
+COPY ~Mystigan/item/bag/E_BScro1.itm~ ~Mystigan/item/bag~
+	~Mystigan/item/bag/E_BScro2.itm~ ~Mystigan/item/bag~
+	~Mystigan/item/bag/E_BScro3.itm~ ~Mystigan/item/bag~	SAY NAME2 #35449	SAY DESC #35451
+COPY ~Mystigan/store/E_Mysti2.sto~		~Mystigan/store~	WRITE_ASCII 0x144 ~SCFING~ #8	WRITE_ASCII 0x160 ~SCMORD~ #8	WRITE_ASCII 0x1b4 ~SCMINVI~ #8
+WRITE_ASCII 0x1ec ~SCSTUN~ #8	WRITE_ASCII 0x2b0 ~SCPRISM~ #8	WRITE_ASCII 0x304 ~SPWI805X~ #8	WRITE_ASCII 0x358 ~SPWI808X~ #8	WRITE_ASCII 0x374 ~SCINCIN~ #8
+WRITE_ASCII 0x56c ~SCKILL~ #8
+ADD_STORE_ITEM ~SCACID~ AFTER ~SCFING~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SCMALA~ AFTER ~SCACID~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SCMSV~ AFTER ~SCMALA~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SPWI710X~ AFTER ~SCMSV~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SPWI711X~ AFTER ~SPWI710X~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SPWI806X~ AFTER ~SCRL9F~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SPWI807X~ AFTER ~SPWI806X~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SCBLANK~ AFTER ~SPWI807X~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SCMSVI~ AFTER ~SCBLANK~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SCMSVII~ AFTER ~SCRLB4~ #1 #0 #0 ~IDENTIFIED~ #1
+END
+
+ACTION_IF DIRECTORY_EXISTS ~Darron~ BEGIN //Darron
+COPY ~Darron/Darron.tp2~ ~Darron/Darron.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~ar0307.bcs~ ~ar2100.bcs~
+COPY ~Darron/baf/existedarron.baf~ ~Darron//baf/existedarron.baf~
+REPLACE_TEXTUALLY ~ar0307~ ~ar2100~
+REPLACE_TEXTUALLY ~1195.1654],3~ ~681.1083],S~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~Renal~ BEGIN //Sir Renal
+COPY ~Renal/setup-renal.tp2~ ~Renal/setup-renal.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~ar0903.bcs~ ~ar2107.bcs~
+COPY ~Renal/baf/existeRenal.baf~ ~Renal/baf/existeRenal.baf~
+REPLACE_TEXTUALLY ~1224.477],3~ ~366.246],S~
+COPY ~Renal/sto/eslisto1.sto~ ~Renal/sto/eslisto1.sto~
+REMOVE_STORE_ITEM	~scrl15~
+COPY ~Renal/D/esrenal.d~ ~Renal/D/esrenal.d~
+REPLACE_TEXTUALLY	~~~~~IF ~~ THEN REPLY @1 DO ~StartStore("ESLISTO1",LastTalkedToBy())~ EXIT
+   IF ~~ THEN REPLY @2 GOTO 2a
+   IF ~~ THEN REPLY @3 GOTO 6a~~~~~
+	 ~~~~~IF ~~ THEN REPLY @1 DO ~StartStore("ESLISTO1",LastTalkedToBy())~ EXIT
+   IF ~~ THEN REPLY @3 GOTO 6a~~~~~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~volcano~ BEGIN //The Improved Volcano! Pack
+COPY ~Volcano/setup-Volcano.tp2~ ~Volcano/setup-Volcano.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~ar5500.bcs~ ~ar9100.bcs~
+COPY ~Volcano/baf/AR5500E.baf~ ~Volcano/baf/AR5500E.baf~
+REPLACE_TEXTUALLY ~2853.2331],0)~ ~2354.2005],SWW)~
+COPY ~Volcano/sto/ZODESAK.STO~ ~Volcano/sto/ZODESAK.STO~
+WRITE_ASCII 0x124 ~SCKILL~ #8
+END
+
+ACTION_IF DIRECTORY_EXISTS ~VolcanicArmoury~ BEGIN //Volcanic Armoury
+COPY ~VolcanicArmoury/setup-VolcanicArmoury.tp2~ ~VolcanicArmoury/setup-VolcanicArmoury.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~doghma.sto~ ~kutemple.sto~
+REPLACE_TEXTUALLY ~roger.sto~ ~kuoswald.sto~
+REPLACE_TEXTUALLY ~bernard2.sto~ ~shlehlan.sto~
+REPLACE_TEXTUALLY ~ribald.sto~ ~kusmith.sto~
+REPLACE_TEXTUALLY ~murcrag.sto~ ~kuork0.sto~
+REPLACE_TEXTUALLY ~temhelm.sto~ ~kugerth.sto~ 
+REPLACE_TEXTUALLY ~temlath.sto~ ~kutemple.sto~
+REPLACE_TEXTUALLY ~TRGENI01.sto~ ~de_lib.sto~
+REPLACE_TEXTUALLY ~UDDROW22.sto~ ~ldd_nym.sto~
+REPLACE_TEXTUALLY ~FFBART.sto~ ~Kuinn3.sto~
+REPLACE_TEXTUALLY "ldd_nym.sto~
+WRITE_LONG 0x10 THIS | BIT0 | BIT1 | BIT2 | BIT12" "ldd_nym.sto~"
+END
+
+ACTION_IF DIRECTORY_EXISTS ~IRStore~ BEGIN //IRstore
+COPY ~IRStore/setup-IRStore.tp2~ ~IRStore/setup-IRStore.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~ar0700.bcs~ ~ar2100.bcs~
+REPLACE_TEXTUALLY ~ar5000.bcs~ ~ar9100.bcs~
+REPLACE_TEXTUALLY ~ar6400.bcs~ ~ar9715.bcs~
+REPLACE_TEXTUALLY "PRINT ~" "//PRINT ~"
+COPY ~IRStore/baf/IRAR0700.baf~ ~IRStore/baf/IRAR0700.baf~
+	 ~IRStore/baf/JOIRAR0700.baf~ ~IRStore/baf/JOIRAR0700.baf~
+REPLACE_TEXTUALLY ~2075.1220],15)~ ~2344.1817],W)~
+REPLACE_TEXTUALLY ~AR0700~ ~AR2100~
+COPY ~IRStore/baf/JOIRAR5000.baf~ ~IRStore/baf/JOIRAR5000.baf~
+REPLACE_TEXTUALLY ~2075.1220],15)~ ~2189.1329],SE)~
+COPY ~IRStore/baf/JOIRAR6400.baf~ ~IRStore/baf/JOIRAR6400.baf~
+REPLACE_TEXTUALLY ~269.276],15)~ ~122.211],SE)~
+COPY ~IRStore/Dialogue/PEIRSto.d~ ~IRStore/Dialogue/PEIRSto.d~
+REPLACE_TEXTUALLY ~AR0700~ ~AR2100~
+REPLACE_TEXTUALLY ~AR5000~ ~AR9100~
+REPLACE_TEXTUALLY ~AR6400~ ~AR9715~
+COPY ~IRStore/Store/PEIRSTO.STO~ ~IRStore/Store/PEIRSTO.STO~
+WRITE_ASCII 0x44 ~DKURUM~ #8
+COPY ~IRStore/Lib/main_component.tpa~ ~IRStore/Lib/main_component.tpa~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~DGItems~ BEGIN //DGItems
+COPY ~Derats_IWDisateur/Divers/Dgitems/ring42.itm~ ~override~ SAY NAME2 @50	SAY DESC @51
+COPY ~DGItems/setup-DGItems.tp2~ ~DGItems/setup-DGItems.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~wmart2.sto~ ~kuork0.sto~
+COPY ~DGItems/lib/main_component.tpa~ ~DGItems/lib/main_component.tpa~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~wmart2.sto~ ~kuork0.sto~
+REPLACE_TEXTUALLY "LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~WA2DAK~" "/*
+	  LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~WA2DAK~"
+REPLACE_TEXTUALLY "LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEBAGDG" "*/
+	  LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEBAGDG"
+REPLACE_TEXTUALLY ~WA2ROBE~ ~UROBE1A~
+REPLACE_TEXTUALLY ~WA2RING~ ~SCARAB~
+REPLACE_TEXTUALLY ~WA2AMU~ ~AMULBRO~
+REPLACE_TEXTUALLY ~WA2DAK~ ~BELTGON~
+REPLACE_TEXTUALLY ~npsw02~ ~SW1h44~
+REPLACE_TEXTUALLY ~WA2HARP~ ~SCARAB~
+REPLACE_TEXTUALLY "book08~ position=~LAST~ flags=~identified~
+    END // Existing item" "book08~ position=~LAST~ flags=~identified~
+    END // Existing item
+	/*"
+REPLACE_TEXTUALLY ~// Bam for épée de Baldurien 
+  END~ ~// Bam for épée de Baldurien 
+  END
+  */~  
+END
+
+//Wares Of The Planes - Tout fait - ce n'est PAS juste un magasin, et lui supprimer ci et ça parce que ça n'est pas possible dans IWD c'est le massacrer.
+//Trovador REO - "Tout fait" - à tellement blasté mon IWDEE que même après désinstallation mes sauvegardes ne se chargeaient plus.
+
+
+///////////////////////////  Objets et sorts  ///////////////////////////
+
+ACTION_IF DIRECTORY_EXISTS ~Isaac's_Missile_Storm~ BEGIN //Isaac's Missile Storm
+COPY ~Isaac's_Missile_Storm/SETUP-Isaac's_Missile_Storm.tp2~ ~Isaac's_Missile_Storm/SETUP-Isaac's_Missile_Storm.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~kuork1~ ~kuork0~
+REPLACE_TEXTUALLY ~11ELYTHA~ ~Kieran2~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~TTSQ~ BEGIN //The Tortured Soul Quest
+COPY ~TTSQ/setup-TTSQ.tp2~ ~TTSQ/setup-TTSQ.tp2~
+REPLACE_TEXTUALLY ~AR0805.bcs~ ~ar3201.bcs~
+REPLACE_TEXTUALLY ~AR0805.are~ ~ar3201.are~
+REPLACE_TEXTUALLY "0x94 ~AR0805~ #8" "0x94 ~AR3201~ #8"
+REPLACE_TEXTUALLY ~MUMMY01~ ~KTGHl1~
+REPLACE_TEXTUALLY ~MUMGRE01~ ~RNDSKLW~
+COPY ~TTSQ/scripts/AR0805.baf~ ~TTSQ/scripts/AR0805.baf~
+REPLACE_TEXTUALLY ~AR0805~ ~ar3201~
+REPLACE_TEXTUALLY ~Container 1~ ~Sarcophagus 1~
+COPY ~TTSQ/D/RIBALD.d~ ~TTSQ/D/RIBALD.d~
+REPLACE_TEXTUALLY ~RIBALD~ ~DORRICK~
+COPY ~TTSQ/D/CORNEIL.d~ ~TTSQ/D/CORNEIL.d~
+REPLACE_TEXTUALLY ~CORNEIL~ ~DHILDRTH~
+COPY ~TTSQ/baf/cutbae.baf~ ~TTSQ/baf/cutbae.baf~
+REPLACE_TEXTUALLY ~RIBALD~ ~ORRICK~
+REPLACE_TEXTUALLY ~51610~ ~16257~
+COPY ~TTSQ/Cre/metbae.cre~ ~TTSQ/Cre/metbae.cre~	WRITE_ASCII 0x6fc ~HELMSUN~ #8	WRITE_ASCII 0x710 ~LEAT07~ #8	WRITE_ASCII 0x724 ~CAIRN~ #8
+COPY ~TTSQ/Cre/metbae2.cre~ ~TTSQ/Cre/metbae2.cre~	WRITE_ASCII 0x6fc ~LEAT05~ #8	WRITE_ASCII 0x710 ~PIKEMAN~ #8
+END
+
+ACTION_IF DIRECTORY_EXISTS ~heartwood~ BEGIN //Heart of the Wood
+COPY ~heartwood/heartwood.tp2~ ~heartwood/heartwood.tp2~
+REPLACE_TEXTUALLY "_INCLUDES ~tob~" "_IS iwdee"
+REPLACE_TEXTUALLY "// Kyland Lind
+//COPY" "// Kyland Lind
+COPY"
+COPY ~heartwood/creatures/tdr10a.cre~ ~heartwood/creatures/tdr10a.cre~	WRITE_BYTE 0x270 255
+ADD_CRE_ITEM stupid #0 #0 #0 NONE RRING EQUIP
+ADD_CRE_ITEM misc75 #0 #0 #0 NONE WEAPON1 EQUIP
+ADD_CRE_ITEM leat10 #0 #0 #0 NONE ARMOR EQUIP
+EXTEND_TOP ~AR5404.bcs~ ~Derats_IWDisateur/Divers/heartwood/AR5404.baf~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~dsr~ BEGIN //Demon Summoning Ritual
+COPY ~dsr/dsr.tp2~ ~dsr/dsr.tp2~
+REPLACE_TEXTUALLY "_INCLUDES ~tob~" "_IS iwdee"
+REPLACE_TEXTUALLY ~tolger2~ ~malavon~
+REPLACE_TEXTUALLY ~tolger.bcs~ ~ldmalvon.bcs~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~dragonsummon~ BEGIN //Red Dragon Summoning Spell
+COPY ~dragonsummon/dragonsummon.tp2~ ~dragonsummon/dragonsummon.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~ribald3~ ~hobart~
+REPLACE_TEXTUALLY ~SCRL9Z~ ~flamoil~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~saradas_magic~ BEGIN //Saradas magic
+COPY ~saradas_magic/saradas_magic.tp2~ ~saradas_magic/saradas_magic.tp2~
+REPLACE_TEXTUALLY ~AR2304~ ~AR2107~
+COPY ~saradas_magic/AR2304.baf~ ~saradas_magic/AR2107.baf~
+REPLACE_TEXTUALLY ~347.289],0)~ ~437.410],W)~
+COPY ~saradas_magic/!SARADAS.d~ ~saradas_magic/!SARADAS.d~
+REPLACE_TEXTUALLY ~protagonist~ ~LastTalkedToBy~
+END
+
+
+///////////////////////////  One Day Npcs (cheatés)  ///////////////////////////
+
+ACTION_IF DIRECTORY_EXISTS ~Horace~ BEGIN //Horace
+COPY ~Horace/Setup-Horace.tp2~ ~Horace/Setup-Horace.tp2~
+REPLACE_TEXTUALLY ~BG2EE~ ~BG2EE IWDEE~
+REPLACE_TEXTUALLY ~AR2013~ ~AR3301~
+COPY ~Horace/Dialogue/BHorace.d~ ~Horace/Dialogue/BHorace.d~  LPF No_Banters END
+COPY ~Horace/Dialogue/Horacej.d~ ~Horace/Dialogue/Horacej.d~
+REPLACE_TEXTUALLY ~AR2000~ ~AR2100~
+COPY ~Horace/Scripts/Horace.bcs~ ~Horace/Scripts/Horace.bcs~
+DECOMPILE_AND_PATCH BEGIN
+	REPLACE_TEXTUALLY ~AR2000~ ~AR2100~
+	END
+	BUT_ONLY
+COPY ~Horace/Scripts/AR2013.bcs~ ~Horace/Scripts/AR3301.bcs~
+DECOMPILE_AND_PATCH BEGIN
+	REPLACE_TEXTUALLY ~AR2013")~ ~AR3301")
+	LevelPartyLT(10)
+	!NightmareModeOn()~
+	REPLACE_TEXTUALLY ~596.345~ ~2025.1238~
+	END
+	BUT_ONLY
+COPY ~Horace/Horace.cre~ ~Horace/Horace.cre~
+WRITE_LONG 0x018 8000
+WRITE_BYTE 0x024 76
+WRITE_BYTE 0x026 76
+WRITE_BYTE 0x052 8
+WRITE_BYTE 0x054 13
+WRITE_BYTE 0x055 15
+WRITE_BYTE 0x056 14
+WRITE_BYTE 0x057 16
+WRITE_BYTE 0x058 16
+WRITE_BYTE 0x234 4
+WRITE_LONG 0x46c 1
+END
+
+ACTION_IF DIRECTORY_EXISTS ~Malthis~ BEGIN //Malthis
+COPY ~Malthis/Setup-Malthis.tp2~ ~Malthis/Setup-Malthis.tp2~
+REPLACE_TEXTUALLY ~AR0300.bcs~ ~AR3000.bcs~
+REPLACE_TEXTUALLY ~BG2EE~ ~BGEE IWDEE~
+COPY ~Malthis/MalthisPortrait/Malt.baf~ ~Malthis/MalthisPortrait/Malt.baf~
+REPLACE_TEXTUALLY ~AR0513~ ~AR2115~
+REPLACE_TEXTUALLY ~AR4000~ ~AR9100~
+REPLACE_TEXTUALLY ~!InPartyAllowDead(Myself)~ ~False()~
+COPY ~Malthis/dmalt.d~ ~Malthis/dmalt.d~
+REPLACE_TEXTUALLY ~Dead("MFeind1")~ ~~
+COPY ~Malthis/MA0300.BCS~ ~Malthis/MA0300.BCS~
+DECOMPILE_AND_PATCH BEGIN
+	REPLACE_TEXTUALLY ~AR0300")~ ~AR3000")
+	LevelPartyLT(8)
+	!NightmareModeOn()~
+	REPLACE_TEXTUALLY ~4100.2853~ ~454.316~
+	END
+	BUT_ONLY
+COPY ~Malthis/MALT10.CRE~ ~Malthis/MALT10.CRE~	
+WRITE_LONG 0x018 6000
+WRITE_BYTE 0x024 23
+WRITE_BYTE 0x026 23
+WRITE_BYTE 0x052 19
+WRITE_BYTE 0x054 13
+WRITE_BYTE 0x055 14
+WRITE_BYTE 0x056 12
+WRITE_BYTE 0x057 16
+WRITE_BYTE 0x058 15
+WRITE_BYTE 0x067 40
+WRITE_BYTE 0x068 0
+WRITE_BYTE 0x069 50
+WRITE_BYTE 0x234 3
+REMOVE_CRE_EFFECTS
+LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 233	target = 1	parameter1 = 1	parameter2 = 114	timing = 9	END
+LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 233	target = 1	parameter1 = 1	parameter2 = 91	timing = 9	END
+LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 0	target = 1	parameter1 = 1	timing = 9	END
+LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 18	target = 1	parameter1 = 15	timing = 9	END
+END
+
+ACTION_IF DIRECTORY_EXISTS ~Xardas~ BEGIN //Xardas
+COPY ~Xardas/Setup-Xardas.tp2~ ~Xardas/Setup-Xardas.tp2~
+REPLACE_TEXTUALLY ~BG2EE~ ~BG2EE IWDEE~
+REPLACE_TEXTUALLY ~AR1300.bcs~ ~AR2100.bcs~
+COPY ~Xardas/AR1300.baf~ ~Xardas/AR1300.baf~
+REPLACE_TEXTUALLY ~AR1300",0)~ ~AR2100",0)
+	LevelPartyGT(14)
+	NightmareModeOn()~
+REPLACE_TEXTUALLY ~3629.2734],12~ ~748.2243],E~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~Chiara~ BEGIN //Chiara
+COPY ~Chiara/Setup-Chiara.tp2~ ~Chiara/Setup-Chiara.tp2~
+REPLACE_TEXTUALLY ~BG2EE~ ~BG2EE IWDEE~
+REPLACE_TEXTUALLY ~AR0701.bcs~ ~AR2115.bcs~
+REPLACE_TEXTUALLY "EXTEND_TOP ~Ar0900" "// EXTEND_TOP ~Ar0900"
+REPLACE_TEXTUALLY ~AR0404.bcs~ ~AR2107.bcs~
+REPLACE_TEXTUALLY ~AR1602.bcs~ ~AR9102.bcs~
+REPLACE_TEXTUALLY "EXTEND_BOTTOM ~Aerie.bcs" "/*
+EXTEND_BOTTOM ~Aerie.bcs"
+REPLACE_TEXTUALLY "BCS/Anomen.bcs~" "BCS/Anomen.bcs~
+*/"
+REPLACE_TEXTUALLY "COMPILE ~chiara/CHIA_INT.d" "// COMPILE ~chiara/CHIA_INT.d"
+REPLACE_TEXTUALLY "USING ~chiara/Languages/%s/CHIA_INT.tra" "// USING ~chiara/Languages/%s/CHIA_INT.tra"
+COPY ~chiara/CreateChiara.bcs~ ~chiara/CreateChiara.bcs~
+DECOMPILE_AND_PATCH BEGIN
+	REPLACE_TEXTUALLY ~AR0701",0)~ ~AR2115",0)
+	LevelPartyLT(8)
+	!NightmareModeOn()~
+	REPLACE_TEXTUALLY ~1209.2419~ ~451.406~
+	END
+	BUT_ONLY
+COPY ~chiara/CreateJacob.bcs~ ~chiara/CreateJacob.bcs~
+DECOMPILE_AND_PATCH BEGIN
+	REPLACE_TEXTUALLY ~AR0404~ ~AR2107~
+	REPLACE_TEXTUALLY ~1688.2584],NE~ ~74.316],SE~
+	END
+	BUT_ONLY
+COPY ~chiara/CreateRelaed.bcs~ ~chiaraCreateRelaed.bcs~
+DECOMPILE_AND_PATCH BEGIN
+	REPLACE_TEXTUALLY ~AR1602~ ~AR9102~
+	REPLACE_TEXTUALLY ~1138.345],N~ ~1196.326],NW~
+	END
+	BUT_ONLY
+COPY ~chiara/V#Chiara.d~ ~chiara/V#Chiara.d~
+REPLACE_TEXTUALLY ~EXTEND_BOTTOM LEHTIN 0~ ~/*
+EXTEND_BOTTOM LEHTIN 0~
+REPLACE_TEXTUALLY "REPLACE WELLYN" "*/
+APPEND DCHALC"
+COPY ~chiara/add_wirt.d~ ~chiara/add_wirt.d~
+REPLACE_TEXTUALLY ~PPINN01~ ~DKIERAN2~
+COPY ~chiara/add_duer.d~ ~chiara/add_duer.d~
+REPLACE_TEXTUALLY ~UDDUER01~ ~DHOBART~
+COPY ~chiara/V#Chiara.cre~~chiara/V#Chiara.cre~
+WRITE_LONG 0x018 4000
+WRITE_BYTE 0x024 24
+WRITE_BYTE 0x026 24
+WRITE_BYTE 0x052 18
+WRITE_BYTE 0x054 13
+WRITE_BYTE 0x055 15
+WRITE_BYTE 0x056 14
+WRITE_BYTE 0x057 16
+WRITE_BYTE 0x058 16
+WRITE_BYTE 0x234 3
+WRITE_LONG 0x518 4
+END
+
+ACTION_IF DIRECTORY_EXISTS ~FoxMonster~ BEGIN //Moddie
+COPY ~Derats_IWDisateur/Npcs/Moddie~ ~Override~
+COPY ~FoxMonster/Setup-FoxMonster.tp2~ ~FoxMonster/Setup-FoxMonster.tp2~
+REPLACE_TEXTUALLY ~BG2EE~ ~BG2EE IWDEE~
+REPLACE_TEXTUALLY ~AR0602.bcs~ ~ar1200.bcs~
+COPY ~FoxMonster/text files/Z_Moddy.D~ ~FoxMonster/text files/Z_Moddy.D~
+REPLACE_TEXTUALLY ~Z_MODDYP~ ~B_MODDYP~
+REPLACE_TEXTUALLY ~BEGIN Z_MODDY~ ~/*
+BEGIN Z_MODDY~
+REPLACE_TEXTUALLY ~/*BEGIN B_MODDYP~ ~*/
+BEGIN B_MODDYP~
+REPLACE_TEXTUALLY ~B_MODDYP~ ~Z_MODDY~
+//REPLACE_TEXTUALLY %DO ~Join% %DO ~SetGlobal("Z_ModdyJoined","GLOBAL",0) Join
+COPY ~FoxMonster/text files/AR0602.baf~ ~FoxMonster/text files/AR0602.baf~
+REPLACE_TEXTUALLY ~2940.2860],2)~ ~1126.561],SW)~
+COPY ~FoxMonster/text files/BZ_Moddy.D~ ~FoxMonster/text files/BZ_Moddy.D~  LPF No_Banters END
+COPY ~FoxMonster/other files/Z_MODDY.CRE~ ~FoxMonster/other files/Z_MODDY.CRE~
+WRITE_LONG 0x018 1900
+WRITE_BYTE 0x024 12
+WRITE_BYTE 0x026 12
+WRITE_BYTE 0x052 20
+WRITE_BYTE 0x054 13
+WRITE_BYTE 0x055 14
+WRITE_BYTE 0x056 12
+WRITE_BYTE 0x057 16
+WRITE_BYTE 0x058 15
+WRITE_BYTE 0x065 0
+WRITE_BYTE 0x068 65
+WRITE_BYTE 0x06a 0
+WRITE_BYTE 0x234 2
+REMOVE_CRE_EFFECTS
+LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 126	target = 1	parameter1 = 2	timing = 9	END
+LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 233	target = 1	parameter1 = 1	parameter2 = 96	timing = 9	END
+LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 233	target = 1	parameter1 = 1	parameter2 = 113	timing = 9	END
+WRITE_ASCII 0x304 ~SPIN141~ #8
+WRITE_ASCII 0x474 ~SPIN141~ #8
+REMOVE_CRE_ITEM ~z_moddit~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~Larsha~ BEGIN //larsha
+COPY ~Larsha/Setup-Larsha.tp2~ ~Larsha/Setup-Larsha.tp2~
+REPLACE_TEXTUALLY ~BG2EE EET~ ~BG2EE IWDEE EET~
+REPLACE_TEXTUALLY "~ar2806.bcs" "~ar2100.bcs"
+REPLACE_TEXTUALLY "~ar1200.bcs" "~ar1000.bcs"
+REPLACE_TEXTUALLY "~ar4500.bcs" "~ar1002.bcs"
+REPLACE_TEXTUALLY "~HGNYA01.bcs" "~Larsha.bcs"
+REPLACE_TEXTUALLY ~63820~ ~36422~
+REPLACE_TEXTUALLY ~1453~ ~8786~
+REPLACE_TEXTUALLY ~44945~ ~36348~
+COPY ~Larsha/ar1200.bcs~ ~Larsha/ar1200.bcs~
+DECOMPILE_AND_PATCH BEGIN
+	REPLACE_TEXTUALLY ~AR1200~ ~AR1000~
+	REPLACE_TEXTUALLY ~3776.3177],NW~ ~204.2642],W~
+	END
+	BUT_ONLY
+COPY ~Larsha/ar2806.bcs~ ~Larsha/larsha.bcs~
+DECOMPILE_AND_PATCH BEGIN
+	REPLACE_TEXTUALLY ~AR2900~ ~AR2100~
+	REPLACE_TEXTUALLY ~AreaCheck("AR2900")~ ~AreaCheck("AR2000")
+	LevelPartyGT(13)
+	NightmareModeOn()~
+	REPLACE_TEXTUALLY ~AreaCheck("AR2806")~ ~AreaCheck("AR2100")
+	LevelPartyGT(13)
+	NightmareModeOn()~
+	END
+	BUT_ONLY
+COPY ~Larsha/dialog/larcespe.d~ ~Larsha/dialog/larcespe.d~
+REPLACE_TEXTUALLY ~BOTSMITH~ ~DCONLAN~
+COPY ~Larsha/Larsha.cre~ ~Larsha/Larsha.cre~
+WRITE_LONG 0x018 1900
+WRITE_BYTE 0x024 6
+WRITE_BYTE 0x026 6
+WRITE_BYTE 0x052 19
+WRITE_BYTE 0x054 14
+WRITE_BYTE 0x055 16
+WRITE_BYTE 0x056 15
+WRITE_BYTE 0x057 17
+WRITE_BYTE 0x058 17
+WRITE_BYTE 0x234 1
+WRITE_BYTE 0x045 15
+WRITE_BYTE 0x068 15
+REMOVE_CRE_EFFECTS
+LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 233	target = 1	parameter1 = 2	parameter2 = 104	timing = 9	END
+LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 233	target = 1	parameter1 = 1	parameter2 = 91		timing = 9	END
+LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 233	target = 1	parameter1 = 1	parameter2 = 111	timing = 9	END
+LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 233	target = 1	parameter1 = 2	parameter2 = 114	timing = 9	END
+END
+
+
+
+//Thael - Sa quête : rechercher et trouver Sendaï.
+//Ninafer - Référence Irenicus, Imoen
+//Mhoram - Référence enfant de Bhaal, référence liche du pont
+//Mawgul - Référence enfant de Bhaal
+//Mur'Neth - Une fois les banters enlevés il ne lui reste plus grand chose.
+
+//TOUS les pnjs "normaux" : Références enfant de Bhaal, Irenicus, Imoen, zones de SOA/TOB.
+
+
+
+///////////////////////////  Quêtes  ///////////////////////////
+
+
+ACTION_IF DIRECTORY_EXISTS ~tod~ BEGIN //Tower of Deception
+COPY ~Derats_IWDisateur/Quests/Tod/Copy~ ~Override~
+COPY ~Derats_IWDisateur/Quests/Tod/Spin890.spl~ ~Override~ SAY NAME1 @4
+APPEND ~Spell.ids~ ~3890 DEMON_FEAR~
+COPY ~tod/tod.tp2~ ~tod/tod.tp2~
+REPLACE_TEXTUALLY ~ar0021.bcs~ ~ar2111.bcs~
+REPLACE_TEXTUALLY ~BG2EE EET~ ~BG2EE IWDEE EET~
+COPY ~tod/AppendBaf/ar0004.baf~ ~tod/AppendBaf/ar0004.baf~
+REPLACE_TEXTUALLY ~~~~~Global("VA#TianExists","GLOBAL",0)~~~~~ ~~~~~Global("VA#TianExists","GLOBAL",0) GlobalGT("Chapter","GLOBAL",2)~~~~~
+REPLACE_TEXTUALLY ~496.321~ ~49.137~
+COPY ~tod/baf/va#11sc.baf~ ~tod/baf/va#11sc.baf~
+REPLACE_TEXTUALLY ~498.321~ ~51.137~
+COPY ~tod/baf/va#10sc.baf~ ~tod/baf/va#10sc.baf~
+REPLACE_TEXTUALLY ~AR0021~ ~AR2111~
+REPLACE_TEXTUALLY ~553.368~ ~240.314~
+REPLACE_TEXTUALLY ~615.361~ ~289.316~
+REPLACE_TEXTUALLY ~549.413~ ~240.356~
+REPLACE_TEXTUALLY ~581.438~ ~301.354~
+REPLACE_TEXTUALLY ~646.396~ ~244.394~
+REPLACE_TEXTUALLY ~635.436~ ~276.388~
+COPY ~tod/cre/va#tian.cre~ ~tod/cre/va#tian.cre~	WRITE_ASCII 0x6c0 ~SHSTAFF~ #8
+COPY ~tod/cre/va#tian2.cre~ ~tod/cre/va#tian2.cre~	WRITE_ASCII 0x480 ~SHSTAFF~ #8
+COPY ~tod/ustrain2/va#ustrn.cre~ ~tod/ustrain2/va#ustrn.cre~	WRITE_ASCII 0x944 ~OHIOUN03~ #8	WRITE_ASCII 0x958 ~KEDL~ #8	WRITE_ASCII 0x96c ~RING08~ #8
+WRITE_ASCII 0x994 ~BERSERK~ #8	WRITE_ASCII 0x9a8 ~QUOST~ #8	WRITE_ASCII 0x9bc ~UDART4A~ #8
+COPY ~tod/cre/va#maril.cre~ ~tod/cre/va#maril.cre~	WRITE_ASCII 0x1138 ~YXUN~ #8
+COPY ~tod/cre/copy/va#isala.cre~ ~tod/cre/copy/va#isala.cre~	WRITE_ASCII 0x514 ~SALFROS~ #8	SAY NAME1 #851	SAY NAME2 #851
+COPY ~tod/cre/copy/va#fsala.cre~ ~tod/cre/copy/va#fsala.cre~	WRITE_ASCII 0x724 ~SALFIRE~ #8	SAY NAME1 #850	SAY NAME2 #850
+COPY ~tod/cre/va#ghost.cre~			~tod/cre/va#ghost.cre~	WRITE_ASCII 0x5b8 ~CDRELM~ #8
+COPY ~tod/ustrain2/va#gitf1.cre~ ~tod/ustrain2/va#gitf1.cre~
+	 ~tod/ustrain2/va#gitf2.cre~ ~tod/ustrain2/va#gitf2.cre~	WRITE_ASCII 0x424 ~CDRELM~ #8	WRITE_ASCII 0x44c ~UTSWD2B~ #8
+COPY ~tod/ustrain2/va#gitfm.cre~ ~tod/ustrain2/va#gitfm.cre~	WRITE_ASCII 0x680 ~CDRELM~ #8	WRITE_ASCII 0x6bc ~UTSWD2B~ #8	WRITE_ASCII 0x6a8 ~KEDL~ #8
+COPY ~tod/cre/va#gulin.cre~			~tod/cre/va#gulin.cre~	WRITE_ASCII 0x5dc ~CDRELM~ #8
+COPY ~tod/cre/va#guli2.cre~			~tod/cre/va#guli2.cre~	WRITE_ASCII 0x4b0~CDRELM~ #8
+COPY ~tod/cre/copy/va#lizrd.cre~ ~tod/cre/copy/va#lizrd.cre~	SAY NAME1 #23617	SAY NAME2 #23617
+COPY ~tod/cre/copy/va#minot.cre~ ~tod/cre/copy/va#minot.cre~	SAY NAME1 #840	SAY NAME2 #840
+COPY ~tod/cre/copy/va#orc.cre~ ~tod/cre/copy/va#orc.cre~	SAY NAME1 @3	SAY NAME2 @3
+COPY ~tod/cre/copy/va#orog.cre~ ~tod/cre/copy/va#orog.cre~	SAY NAME1 #846	SAY NAME2 #846
+COPY ~tod/are/va#001.are~ ~tod/are/va#001.are~	WRITE_ASCII 0x694 ~LEAT03~ #8
+COPY ~tod/are/va#003.are~ ~tod/are/va#003.are~	WRITE_ASCII 0x8ec ~SPPR407C~ #8
+	COPY ~tod/Tra/%LANGUAGE%~ ~tod/Tra/%LANGUAGE%~ 
+	REPLACE_TEXTUALLY ~Athkatla~ ~Kuldahar~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~DC~ BEGIN //Dungeon Crawl
+COPY ~Derats_IWDisateur/Quests/DC/Copy~ ~Override~
+COPY ~Derats_IWDisateur/Quests/DC/GolCla01.cre~ ~Override~	SAY NAME1 @5	SAY NAME2 @5
+COPY ~Derats_IWDisateur/Quests/DC/Golsto01.cre~ ~Override~	SAY NAME1 @6	SAY NAME2 @6
+COPY ~DC/DC.tp2~ ~DC/DC.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~AR0406.bcs~ ~AR9101.bcs~
+REPLACE_TEXTUALLY ~AR0400.bcs~ ~AR9100.bcs~
+REPLACE_TEXTUALLY ~AR0300.bcs~ ~AR9100.bcs~
+COPY ~DC/Scripts/AR0406.baf~ ~DC/Scripts/AR0406.baf~
+REPLACE_TEXTUALLY ~915.1452~ ~1035.295~
+REPLACE_TEXTUALLY ~969.1472~ ~1079.315~
+REPLACE_TEXTUALLY ~953.1448~ ~1063.291~
+REPLACE_TEXTUALLY ~876.1457~ ~986.300~
+REPLACE_TEXTUALLY ~939.1444~ ~1049.287~
+REPLACE_TEXTUALLY ~928.1500~ ~1028.343~
+COPY ~DC/Scripts/AR0400.baf~ ~DC/Scripts/AR0400.baf~
+REPLACE_TEXTUALLY ~AR0400~ ~AR9100~
+REPLACE_TEXTUALLY ~160.1660~ ~425.860~
+REPLACE_TEXTUALLY ~150.1690~ ~415.890~
+REPLACE_TEXTUALLY ~140.1630~ ~405.830~
+REPLACE_TEXTUALLY ~130.1690~ ~395.890~
+REPLACE_TEXTUALLY ~135.1650~ ~400.850~
+COPY ~DC/Scripts/AR0300.baf~ ~DC/Scripts/AR0300.baf~
+REPLACE_TEXTUALLY ~AR0300~ ~AR9100~
+REPLACE_TEXTUALLY ~1733.3215~ ~1348.1815~
+REPLACE_TEXTUALLY ~1759.3230~ ~1374.1830~
+REPLACE_TEXTUALLY ~1750.3203~ ~1365.1803~
+REPLACE_TEXTUALLY ~1750.3224~ ~1365.1824~
+REPLACE_TEXTUALLY ~1580.3210~ ~1110.1895~	
+REPLACE_TEXTUALLY ~1570.3212~ ~1100.1897~
+REPLACE_TEXTUALLY ~1580.3230~ ~1110.1915~
+REPLACE_TEXTUALLY ~1610.3215~ ~1140.1895~
+REPLACE_TEXTUALLY ~1575.3200~ ~1105.1885~
+REPLACE_TEXTUALLY ~1723.3627~ ~1113.2585~
+COPY ~DC/Dialogue/O#Quest.d~ ~DC/Dialogue/O#Quest.d~ LPF No_Banters END
+REPLACE_TEXTUALLY ~BERNARD~ ~DKIERAN2~
+REPLACE_TEXTUALLY ~BMTHIEF~ ~DQUINN~
+REPLACE_TEXTUALLY ~DMARK1~ ~DEMMRCH~
+REPLACE_TEXTUALLY ~ARLED~ ~DARDEN~
+REPLACE_TEXTUALLY ~1820.3608~ ~1175.2470~
+REPLACE_TEXTUALLY ~1822.3605~ ~1177.2467~
+REPLACE_TEXTUALLY ~1802.3619~ ~1157.2481~
+REPLACE_TEXTUALLY ~1840.3607~ ~1195.2469~
+REPLACE_TEXTUALLY ~1820.3603~ ~1175.2470~
+REPLACE_TEXTUALLY ~1822.3605~ ~1177.2467~
+REPLACE_TEXTUALLY ~1802.3609~ ~1157.2481~
+REPLACE_TEXTUALLY ~1840.3618~ ~1195.2469~
+REPLACE_TEXTUALLY ~1830.3607~ ~1185.2472~
+COPY ~DC/Scripts/O#DCCut1.baf~ ~DC/Scripts/O#DCCut1.baf~
+REPLACE_TEXTUALLY ~432.1467~ ~672.518~
+REPLACE_TEXTUALLY ~787.1406~ ~909.336~
+COPY ~DC/Scripts/O#DCCut8.baf~ ~DC/Scripts/O#DCCut8.baf~
+	 ~DC/Scripts/O#DCCut9.baf~ ~DC/Scripts/O#DCCut9.baf~
+REPLACE_TEXTUALLY ~AR0400~ ~AR9100~
+COPY ~DC/Areas/aro#01.are~ ~DC/Areas/aro#01.are~
+WRITE_ASCII 0x19c ~BON8013~ #8
+WRITE_ASCII 0x2ac ~RNDSKLW~ #8
+WRITE_ASCII 0x3bc ~RNDSKLW~ #8
+WRITE_ASCII 0x4cc ~CPMUMG~ #8	WRITE_ASCII 0x4ac ~CPGMUM0~ #8
+WRITE_ASCII 0x5dc ~BON8013~ #8
+COPY ~DC/Areas/aro#02.are~ ~DC/Areas/aro#02.are~
+WRITE_ASCII 0x3bc ~RNDSKLW~ #8
+WRITE_ASCII 0x4cc ~KTMUM1~ #8 WRITE_ASCII 0x4ac ~GNMMGSG~ #8
+WRITE_ASCII 0x5dc ~KTMUM1~ #8 WRITE_ASCII 0x5bc ~GNMMGSG~ #8
+COPY ~DC/Areas/aro#03.are~ ~DC/Areas/aro#03.are~
+WRITE_ASCII 0x19c ~GOLIRO01~ #8
+WRITE_ASCII 0x5dc ~CPMUMG~ #8	WRITE_ASCII 0x5c4 ~CPGMUM0~ #8
+WRITE_ASCII 0x6ec ~CPMUMG~ #8	WRITE_ASCII 0x6cc ~CPGMUM0~ #8
+WRITE_ASCII 0x10b4 ~SPWI805X~ #8
+WRITE_ASCII 0x10dc ~WAND05~ #8
+COPY ~DC/Areas/aro#04.are~ ~DC/Areas/aro#04.are~
+WRITE_ASCII 0x244 ~MISC44~ #8
+COPY ~DC/English/O#QUEST.tra~ ~DC/English/O#QUEST.tra~
+	 ~DC/English/setup-DC.tra~ ~DC/English/setup-DC.tra~
+	 REPLACE_TEXTUALLY ~to Athkatla~ ~to Lonelywood~
+	 REPLACE_TEXTUALLY ~on the roof of the Copper Coronet~ ~to Lonelywood~
+	 REPLACE_TEXTUALLY ~the slums~ ~Lonelywood~
+COPY ~DC/French/O#QUEST.tra~ ~DC/French/O#QUEST.tra~
+	 ~DC/French/setup-DC.tra~ ~DC/French/setup-DC.tra~
+	 REPLACE_TEXTUALLY ~à Athkatla~ ~au Bois isolé~
+	 REPLACE_TEXTUALLY ~sur le toit de la Couronne de Cuivre~ ~au Bois isolé~
+	 REPLACE_TEXTUALLY ~des Bas-Quartiers~ ~du Bois isolé~
+COPY ~DC/German/O#QUEST.tra~ ~DC/French/O#QUEST.tra~
+	 ~DC/German/setup-DC.tra~ ~DC/French/setup-DC.tra~
+	 REPLACE_TEXTUALLY ~Athkatla~ ~Waldheim~
+	 REPLACE_TEXTUALLY ~dem Dach der Kupferkrone~ ~in Waldheim~
+	 REPLACE_TEXTUALLY ~der slums~ ~von Waldheim~
+	 REPLACE_TEXTUALLY ~die slums~ ~von Waldheim~
+	 REPLACE_TEXTUALLY ~den slums~ ~von Waldheim~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~TotDG~ BEGIN //Tales of the Deep Gardens
+COPY ~Derats_IWDisateur/Quests/TotDG~ ~Override~
+COPY ~TotDG/install.tph~ ~TotDG/install.tph~
+REPLACE_TEXTUALLY ~bg2ee~ ~bg2ee iwdee~
+REPLACE_TEXTUALLY ~merchant.sto~ ~kugerth.sto~
+REPLACE_TEXTUALLY ~AR0400.bcs~ ~AR2000.bcs~
+REPLACE_TEXTUALLY ~AR0500.bcs~ ~AR1000.bcs~
+REPLACE_TEXTUALLY ~AR0522.bcs~ ~AR1000.bcs~
+REPLACE_TEXTUALLY ~AR0509.bcs~ ~AR1000.bcs~
+REPLACE_TEXTUALLY ~AR0802.bcs~ ~AR3401.bcs~
+REPLACE_TEXTUALLY ~AR0809.bcs~ ~AR3301.bcs~
+REPLACE_TEXTUALLY ~AR0900.bcs~ ~AR2100.bcs~
+REPLACE_TEXTUALLY ~AR1000.bcs~ ~AR2100.bcs~
+REPLACE_TEXTUALLY ~AR5500.bcs~ ~AR9500.bcs~
+REPLACE_TEXTUALLY ~NPC REACTIONS~ ~NPC REACTIONS
+/*~
+REPLACE_TEXTUALLY ~end of main component~ ~end of main component
+*/~
+COPY ~TotDG/Scripts/AR0400.baf~ ~TotDG/Scripts/AR0400.baf~
+REPLACE_TEXTUALLY ~AR0400~ ~AR2000~
+REPLACE_TEXTUALLY ~1097.3004],3)~ ~261.1760],SE)~
+COPY ~TotDG/Scripts/AR0802.baf~ ~TotDG/Scripts/AR0802.baf~
+REPLACE_TEXTUALLY ~AR0802~ ~AR3401~
+REPLACE_TEXTUALLY ~693.237],3)~ ~680.711],S)~
+REPLACE_TEXTUALLY ~~~~~!Global("DGSkeletonExist","AR3401",1)~~~~~ ~~~~~!Global("DGSkeletonExist","AR3401",1) GlobalGT("Chapter","GLOBAL",2)~~~~~
+COPY ~TotDG/Scripts/AR0809.baf~ ~TotDG/Scripts/AR0809.baf~
+REPLACE_TEXTUALLY ~AR0809~ ~AR3301~
+REPLACE_TEXTUALLY ~975.240],3)~ ~1340.760],W)~
+REPLACE_TEXTUALLY ~~~~~!Global("DGSkeletonExist","AR3301",1)~~~~~ ~~~~~!Global("DGSkeletonExist","AR3301",1) GlobalGT("Chapter","GLOBAL",2)~~~~~
+COPY ~TotDG/Scripts/AR0900.baf~ ~TotDG/Scripts/AR0900.baf~
+REPLACE_TEXTUALLY ~AR0900~ ~AR2100~
+REPLACE_TEXTUALLY ~696.2234],3)~ ~3315.648],S)~
+REPLACE_TEXTUALLY ~~~~~!Global("DGEvilPriestExist","AR2100",1)~~~~~ ~~~~~!Global("DGEvilPriestExist","AR2100",1) GlobalGT("Chapter","GLOBAL",2)~~~~~
+COPY ~TotDG/Scripts/AR1000.baf~ ~TotDG/Scripts/AR1000.baf~
+REPLACE_TEXTUALLY ~AR1000~ ~AR2100~
+REPLACE_TEXTUALLY ~2980.1244~ ~2587.1880~
+REPLACE_TEXTUALLY ~~~~~!Global("DGWizardExist","AR2100",1)~~~~~ ~~~~~!Global("DGWizardExist","AR2100",1) GlobalGT("Chapter","GLOBAL",2)~~~~~
+COPY ~TotDG/Scripts/AR5500.baf~ ~TotDG/Scripts/AR9500.baf~
+REPLACE_TEXTUALLY ~AR5500~ ~AR9500~
+REPLACE_TEXTUALLY ~1867.1332~ ~2108.2285~
+COPY ~TotDG/Scripts/ARLDV8.baf~ ~TotDG/Scripts/ARLDV8.baf~
+REPLACE_TEXTUALLY ~AR1000~ ~AR2100~
+REPLACE_TEXTUALLY ~2397.701],4~ ~2536.1901],NEE~
+REPLACE_TEXTUALLY ~2428.830],4~ ~2550.1952],NEE~
+REPLACE_TEXTUALLY ~2442.872],4~ ~2473.1918],NEE~
+REPLACE_TEXTUALLY ~2570.806],4~ ~2495.1968],NEE~
+REPLACE_TEXTUALLY ~2575.741],4~ ~2427.1923],NEE~
+REPLACE_TEXTUALLY ~2522.644],4~ ~2440.1972],NEE~
+	ACTION_IF ( NOT ~%LANGUAGE%~ STR_EQ ~french~) BEGIN //Code par JohnBob
+	OUTER_SPRINT "Lang0" ""
+	OUTER_SPRINT "Lang1" ""
+	END
+	ACTION_IF (~%LANGUAGE%~ STR_EQ ~french~) BEGIN
+	OUTER_SPRINT "Lang0" "d'"
+	OUTER_SPRINT "Lang1" "de "
+	END
+	COPY ~TotDG/Translations/%LANGUAGE%~ ~TotDG/Translations/%LANGUAGE%~
+	REPLACE_TEXTUALLY ~%Lang0%Athkatla~ ~%Lang1%Kuldahar~ // pour les Athkatla avec prépositions
+	REPLACE_TEXTUALLY ~Athkatla~ ~Kuldahar~ // pour les Athkatla sans prépositions
+END
+
+ACTION_IF DIRECTORY_EXISTS ~Ooze~ BEGIN //Oozes Lounge 
+COPY ~Derats_IWDisateur/Quests/Ooze/Copy~ ~Override~
+COPY ~Derats_IWDisateur/Quests/Ooze/Jellygr.cre~ ~Override~	SAY NAME1 @8	SAY NAME2 @8
+COPY ~Derats_IWDisateur/Quests/Ooze/Jelmus01.cre~ ~Override~ SAY NAME1 @9	SAY NAME2 @9
+COPY ~Derats_IWDisateur/Quests/Ooze/ring04.itm~ ~Override~ 	SAY NAME2 @10	SAY DESC @11
+COPY ~Derats_IWDisateur/Quests/Ooze/bow17.itm~ ~Override~ 	SAY NAME2 @12	SAY DESC @13
+COPY ~Derats_IWDisateur/Quests/Ooze/bow18.itm~ ~Override~ 	SAY NAME2 @14	SAY DESC @15
+COPY ~Derats_IWDisateur/Quests/Ooze/sw2h11.itm~ ~Override~ 	SAY NAME2 @16	SAY DESC @17
+COPY ~Derats_IWDisateur/Quests/Ooze/sw1h22.itm~ ~Override~ 	SAY NAME2 @18	SAY DESC @19
+COPY ~Derats_IWDisateur/Quests/Ooze/xbow09.itm~ ~Override~ 	SAY NAME2 @20	SAY DESC @21
+COPY ~Derats_IWDisateur/Quests/Ooze/amul18.itm~ ~Override~ 	SAY NAME2 @22	SAY DESC @23
+COPY ~Derats_IWDisateur/Quests/Ooze/wand09.itm~ ~Override~ 	SAY NAME2 @24	SAY DESC @25
+COPY ~Derats_IWDisateur/Quests/Ooze/sw1h41.itm~ ~Override~ 	SAY NAME2 @26	SAY DESC @27
+COPY ~Derats_IWDisateur/Quests/Ooze/sw1h73.itm~ ~Override~ 	SAY NAME2 @28	SAY DESC @29
+COPY ~Derats_IWDisateur/Quests/Ooze/sw1h75.itm~ ~Override~ 	SAY NAME2 @30	SAY DESC @31
+COPY ~Derats_IWDisateur/Quests/Ooze/helm05.itm~ ~Override~ 	SAY NAME2 @32	SAY DESC @33
+COPY ~Ooze/ooze.TP2~ ~Ooze/ooze.TP2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~AR0502.bcs~ ~AR3502.bcs~
+REPLACE_TEXTUALLY ~AR0334.bcs~ ~AR1003.bcs~
+REPLACE_TEXTUALLY ~Ooze/lib/AddBG2_AR0400Door.tph~ ~Derats_IWDisateur/Quests/Ooze/Entry.tph~
+COPY ~Ooze/Scripts/AR0502.baf~ ~Ooze/Scripts/AR0502.baf~
+REPLACE_TEXTUALLY ~AR0502~ ~AR3502~
+REPLACE_TEXTUALLY ~Bed~ ~Desk~
+COPY ~Ooze/Dialogues/L#NSCLE.D~ ~Ooze/Dialogues/L#NSCLE.D~
+	 ~Ooze/Dialogues/L#NSNYM.D~ ~Ooze/Dialogues/L#NSNYM.D~ LPF No_Banters END
+COPY ~Ooze/Dialogues/cromwell.D~ ~Ooze/Dialogues/cromwell.D~
+REPLACE_TEXTUALLY ~WSMITH01~ ~DARUNDEL~
+REPLACE_TEXTUALLY ~BOTSMITH~ ~DARUNDEL~
+COPY_EXISTING ~Ooze/lib/items_ee.tpa~ ~Ooze/lib/items_ee.tpa~
+REPLACE_TEXTUALLY ~firmon03~ ~beholdh~
+COPY_EXISTING ~Ooze/areas/l#ns01.are~ ~Ooze/areas/l#ns01.are~ WRITE_ASCII 0x19c ~MCAR~ #8 WRITE_ASCII 0x2ac ~MCAR~ #8
+WRITE_ASCII 0x3bc ~MCAR~ #8 WRITE_ASCII 0x4cc ~MCAR~ #8 WRITE_ASCII 0x5dc ~MCAR~ #8 WRITE_ASCII 0x6ec ~MCAR~ #8
+WRITE_ASCII 0x7fc ~MCAR~ #8 WRITE_ASCII 0x90c ~MCAR~ #8 WRITE_ASCII 0xba8 ~AR2100~ #8
+COPY_EXISTING ~Mcar.cre~ ~Override~	WRITE_ASCII 0x250 ~GNELEM1~ #8
+COPY_EXISTING ~Ooze/stores/l#nslu2.sto~ ~Ooze/stores/l#nslu2.sto~ WRITE_ASCII 0x374 ~SCPWS~ #8 WRITE_ASCII 0x3ac ~SCDFOG~ #8
+	ACTION_IF ( NOT ~%LANGUAGE%~ STR_EQ ~french~) BEGIN
+	OUTER_SPRINT "Lang0" ""
+	OUTER_SPRINT "Lang1" ""
+	END
+	ACTION_IF (~%LANGUAGE%~ STR_EQ ~french~) BEGIN
+	OUTER_SPRINT "Lang0" "d'"
+	OUTER_SPRINT "Lang1" "de "
+	END
+	COPY ~Ooze/Translations/%LANGUAGE%~ ~Ooze/Translations/%LANGUAGE%~
+	REPLACE_TEXTUALLY ~%Lang0%Athkatla~ ~%Lang1%Kuldahar~
+	REPLACE_TEXTUALLY ~Athkatla~ ~Kuldahar~
+COPY_EXISTING ~AR2100.are~ ~Override~ ADD_MAP_NOTE #309 #1887 ~Gray~ @7
+END
+
+//The sellesword _ - Quasi tout fait - Demande comme ressources des fichiers DLG dont aucune entrée ne correspond dans IWD. C'est mort.
+
+//The White queen - Tout fait - 4 heures passés sur cette %§£µ$# de woldmap sans succès.
+//Innershade - worlmap
+//Dark Tiding - worlmap
+//In Love, Undeath - worlmap
+//Throne of the Mad God - worlmap
+//Call of the Lost Goddess - worlmap
+//Juniper and the Stone Leech - worlmap
+//The Journey to the Whin Hill - worlmap
+//The Bloodied Stings of Barovia - worlmap
+//Secret of Bone Hill - Mod Worlmap requis
+//Loretaker - Entrée dans les égouts qui mène... à des égouts.
+
+
+
+///////////////////////////  Arènes  ///////////////////////////
+
+ACTION_IF DIRECTORY_EXISTS ~UoT~ BEGIN //Arena of T.R.O.W
+COPY ~Uot/Setup-UoT.tp2~ ~Uot/Setup-UoT.tp2~
+REPLACE_TEXTUALLY ~25Dialog~ ~IWDEE~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+COPY ~UoT\Areas\Teleport\UTRingExtendScript.baf~ ~UoT\Areas\Teleport\UTRingExtendScript.baf~
+REPLACE_TEXTUALLY ~Global("UTGiveRing","MYAREA",0)~ ~Global("UTGiveRing","MYAREA",0)
+	LevelGT(Player1,13)~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~A7-TestYourMettle~ BEGIN //Test Your Mettle
+COPY ~Derats_IWDisateur/Quests/Mettle/Copy~ ~Override~
+COPY ~A7-TestYourMettle/A7-TestYourMettle.tp2~ ~A7-TestYourMettle/A7-TestYourMettle.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~ar0411.are~ ~ar9300.are~
+REPLACE_TEXTUALLY ~68099~ ~26498~
+REPLACE_TEXTUALLY ~68100~ ~26502~
+REPLACE_TEXTUALLY ~35009~ ~32854~
+REPLACE_TEXTUALLY ~35011~ ~32855~
+REPLACE_TEXTUALLY "#70635" "@99999"
+REPLACE_TEXTUALLY "#70636" "@99999"
+REPLACE_TEXTUALLY "// expanding areas" "/*
+// expanding areas"
+REPLACE_TEXTUALLY "BEGIN @11" "*/
+BEGIN @11"
+REPLACE_TEXTUALLY "Adding rogue modrons to Planar Sphere" "Adding rogue modrons to the bridge between towers
+EXTEND_TOP ~ar9300.bcs~ ~Derats_IWDisateur/Quests/Mettle/spwnm.baf~"
+COPY ~A7-TestYourMettle/Scripts/a7#dron3.baf~ ~A7-TestYourMettle/Scripts/a7#dron3.baf~
+REPLACE_TEXTUALLY "TriggerOverride(LastSeenBy(Myself)," "NextTriggerObject(LastSeenBy(Myself))
+ "
+REPLACE_TEXTUALLY "AllyOf(Myself),10))" "AllyOf(Myself),10)"
+COPY ~Derats_IWDisateur/Quests/Mettle/append_baldur.baf~ ~A7-TestYourMettle/Scripts/append_baldur.baf~
+COPY ~A7-TestYourMettle/languages/%LANGUAGE%/Setup.tra~ ~A7-TestYourMettle/languages/%LANGUAGE%/Setup.tra~
+REPLACE_TEXTUALLY "@1 = ~Testez votre courage !~" "@1 = ~Testez votre courage !~
+	@99999 = ~Erinyes~
+	@99998 = ~Courbespace~"
+COPY ~A7-TestYourMettle/Lib/functions.tph~ ~A7-TestYourMettle/Lib/functions.tph~
+REPLACE_TEXTUALLY "SAY UNIDENTIFIED_DESC @2130" "SAY UNIDENTIFIED_DESC @2130 SAY NAME1 @99998"
+REPLACE_TEXTUALLY "SAY UNIDENTIFIED_DESC @2131" "SAY UNIDENTIFIED_DESC @2131 SAY NAME1 @99998"
+REPLACE_TEXTUALLY "SAY IDENTIFIED_DESC @2131" "SAY IDENTIFIED_DESC @2131  SAY NAME2 @99998"
+END
+
+//Duality's Odd Quest (Imnesvale) - crée des faux maires, des faux vendeurs, etc.... //Recréer faux maires de Bois isolé ?
+//Tomoyo and the Underground City - OÙ mettre l'entrée vers la crypte de la liche ? Ok, trouvé, mais mod nul
+//Tales of Anegh 
+//Pits of Despair - A besoin de BEAUCOUP de ressources de BG2EE n’étant pas dans IWDEE.
+
+
+///////////////////////////  Divers  ///////////////////////////
+
+ACTION_IF DIRECTORY_EXISTS ~w_packmule~ BEGIN //Packmule
+COPY ~w_packmule/setup-w_packmule.tp2~ ~w_packmule/setup-w_packmule.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+COPY ~w_packmule/lib/w_mule.tpa~ ~w_packmule/lib/w_mule.tpa~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~iwdee~
+REPLACE_TEXTUALLY ~ar0700~ ~ar2100~
+REPLACE_TEXTUALLY ~170.1218~ ~95.2039~
+REPLACE_TEXTUALLY ~90.1235~ ~50.2012~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~RevisitOldHaunt~ BEGIN //Revisit the Old Haunt
+COPY ~RevisitOldHaunt/SETUP-RevisitOldHaunt.tp2~ ~RevisitOldHaunt/SETUP-RevisitOldHaunt.tp2~
+REPLACE_TEXTUALLY ~bg2ee~ ~iwdee~
+REPLACE_TEXTUALLY ~@43~ ~@44~
+END
+
+ACTION_IF DIRECTORY_EXISTS ~SelphiraTweaks~ BEGIN //Selphira Tweaks
+COPY ~SelphiraTweaks/SelphiraTweaks.tp2~ ~SelphiraTweaks/SelphiraTweaks.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+END

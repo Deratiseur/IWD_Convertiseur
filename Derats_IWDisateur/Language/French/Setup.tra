@@ -1,0 +1,195 @@
+@0 = ~Preparer des mod prevus pour BG2EE afin qu'ils soient utilisable sur IWDEE~
+
+/////////////Tower of Deception
+@3 = ~Archer orque~
+@4 = ~Peur démoniaque~ //39397
+
+/////////////Dungeon Crawl
+@5 = ~Golem d'argile~
+@6 = ~Golem de pierre~
+
+/////////////Ooze lounge
+@7 = ~Petite entrée discrète~
+@8 = ~Limon vert~
+@9 = ~Gelée moutarde~
+@10 = ~La Folie du Bouffon~ //6834
+@11 = ~Anneau de maladresse : « La Folie du Bouffon » 
+Le plus célèbre propriétaire de cet anneau s'enrichit considérablement en exploitant sa nature enchantée. Grégoria le Fou, bouffon de son métier, utilisait son incomparable habileté manuelle pour échanger son anneau contre celui d'un pigeon choisi parmi les spectateurs. Dans la suite de son numéro, il se moquait de la maladresse de l'individu, au grand plaisir de ses camarades. Il retirait l'anneau (selon une méthode connue seulement du bouffon rusé) uniquement après avoir fait promettre au faire-valoir qu'il ne chercherait pas à se venger du traitement infligé. Toutefois, Grégoria dut souvent se ménager une sortie hâtive. Dans son dernier spectacle, il s'en prit, dit-on, à un mage grincheux de Château-Zhentil. Sa fuite ne fut pas assez rapide, semble-t-il...
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+Dextérité : réduite de moitié
+Furtivité : réduite de moitié
+Sorts : 75 % d'échec lors du lancement d'un sort
+Spécial : ne peut être annulé que par un sort Délivrance de la malédiction
+
+Poids : 0~ //7362
+@12 = ~Arc long +2~ //7441
+@13 = ~L'arc long est très similaire à l'arc court, si ce n'est qu'il est beaucoup plus grand, à peu près de la taille de l'archer. Sa fréquence de tir est inférieure, mais dispose d'une plus grande portée et d'une précision accrue. Le bois de cet arc est chaud au toucher, preuve de l'existence de l'énergie qui le parcourt.
+
+PARAMÈTRES :
+
+TAC0 : +3
+Facteur de vitesse : 5
+Type de compétence : arc long
+Type : arme à deux mains
+Nécessite : 6 en Force
+
+Poids : 3~ //176
+@14 = ~Arc court +2~ //7448
+@15 = ~Les arcs courts sont les précurseurs de cette famille. Cet arc court est tout à fait comparable à n'importe quel arc long. La magie qui en émane lui accorde une précision et une puissance hors du commun.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Facteur de vitesse : 4
+Type de compétence : arc court
+Type : arme à deux mains
+Nécessite : 3 en Force
+
+Poids : 2~ //199
+@16 = ~Épée à deux mains +2~ //3250
+@17 = ~Dérivée de l'épée longue, l'épée à deux mains est sensiblement plus grande, à la fois de lame et de garde. L'objectif d'une telle arme était de pouvoir atteindre les chevaliers montés, et d'enfoncer les formations de piquiers en brisant les manches de leurs armes. Cette version magique de l'arme en est facilement capable, et rappelle à tous de craindre l'union des armes et de la sorcellerie.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 1d10+2 (tranchant)
+Facteur de vitesse : 8
+Type de compétence : épée à deux mains
+Type : arme à deux mains
+Nécessite : 14 en Force
+
+Poids : 10~ //36338
+@18 = ~Cimeterre +1~ //23377
+@19 = ~Le cimeterre, ou « shamshir », comme on l'appelait au début, a une longue lame à simple tranchant et très incurvée qui s'effile en une longue pointe. Il est un peu lent, mais très efficace et mortel en combat. Cette arme a été améliorée par magie pour augmenter la compétence de son porteur.
+
+PARAMÈTRES :
+
+TAC0 : +1
+Dégâts : 1d8 +1 (tranchant)
+Facteur de vitesse : 4
+Type de compétence : cimeterre/wakizashi/ninjato
+Type : arme à une main
+Nécessite : 10 en Force
+
+Poids : 3~ //23378
+@20 = ~Arbalète légère +2~ //7794
+@21 = ~Une arbalète est constituée d'un arc, généralement en bois de frêne ou d'if, monté en travers sur un manche de bois ou de métal. Les projectiles envoyés par une arbalète sont appelés « carreaux ». Cette arbalète magique est élégante et légère, et a très peu de recul.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : +2 (projectile)
+Facteur de vitesse : 3
+Type de compétence : arbalète
+Type : arme à deux mains
+Nécessite : 8 en Force
+
+Poids : 5~ //36741
+@22 = ~Charme d'aconit~ //22260
+@23 = ~Une amulette d'argent contenant de la poudre d'aconit.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+TAC0 : +2 contre Lycanthropes
+Dégâts +2 contre Lycanthropes
+
+Poids : 3~ //22261
+@24 = ~Baguette de métamorphose~ //7271
+@25 = ~La baguette émet un fin rayon vert qui se dirige vers sa cible. Toute créature touchée par ce rayon doit réussir un jet de sauvegarde contre les baguettes, sous peine d'être métamorphosée en écureuil.
+
+PARAMÈTRES :
+
+Capacités de charge :
+- Métamorphose en écureuil (jet de sauvegarde contre les baguettes pour annuler)
+  Portée : 1,5 m
+  Zone d'effet : 1 créature
+  Durée : permanente jusqu'à dissipation
+
+Nécessite : 9 en Intelligence
+
+Poids : 1~ //17658
+@26 = ~Épée longue +2~ //96056
+@27 = ~Une épée bénéficiant d'un enchantement standard, quoique puissant. On prétend que les grandes nations du sud avaient autrefois des légions entières de soldats équipés d'armes semblables, une force qui devait être vraiment impressionnante sur un champ de bataille. Mais cette époque d'extravagance appartient à un passé lointain et révolu.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 1d8+2 (tranchant)
+Facteur de vitesse : 3
+Type de compétence : épée longue
+Type : arme à une main
+Nécessite : 6 en Force
+
+Poids : 3~ //39462
+@28 = ~Épée longue +3~ //71025
+@29 = ~Ce type d'épée est également appelé épée à double tranchant, épée de guerre ou épée militaire. Sa lame vibre légèrement dans votre main, signe évident d'un enchantement.
+
+PARAMÈTRES :
+
+TAC0 : +3
+Dégâts : 1d8+3 (tranchant)
+Facteur de vitesse : 2 
+Type de compétence : épée longue
+Type : arme à une main
+Nécessite : 6 en Force
+
+Poids : 2~ //71030
+@30 = ~Katana +3~ //71027
+@31 = ~L'enchantement d'un katana requiert des procédés autrement plus complexes que ceux employés pour une lame normale. En effet, le katana est déjà quasiment une épée parfaite. Toute autre amélioration requiert un sacrifice, comme celui d'un samouraï mourant qui demanderait à un wu-jen de conférer à son arme son expérience et son amour du combat. C'est pourquoi celui qui s'aventure à la manier doit respecter à la fois les coutumes de Kara-Tur et le souvenir du samouraï qui a sacrifié une partie de son âme pour améliorer cette arme. Un manquement à ces exigences risquerait d'avoir des conséquences dramatiques...
+
+PARAMÈTRES : 
+
+TAC0 : +3
+Dégâts : 1d10+3 (tranchant)
+Facteur de vitesse : 1
+Type de compétence : katana
+Type : arme à une main
+Nécessite : 6 en Force 
+
+Poids : 3~ //71032
+@32 = ~Casque d'infravision~ //6810
+@33 = ~Heaume d'infravision : « Les Yeux de la Vérité »
+Comme elle était aussi une pilleuse de tombes, Babette Maelestrom fit créer ce heaume pour faciliter ses excursions à l'intérieur des donjons. Elle attribua plus tard sa richesse à son seul pouvoir, mais ses yeux pénétrants y sont certainement pour quelque chose. 
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Protège contre les coups critiques
+- Infravision jusqu'à 36,5 m.
+
+Poids : 3~ //7397
+
+/////////////The Sellsword
+@34 = ~Prêtresse Elfe noire~ //165
+@35 = ~Elfe noir guerrier~ //52583
+@36 = ~Elfe noir~ //50900
+@38 = ~Yochlol~
+@39 = ~Jarlaxle~
+@40 = ~Chef Elfe noir~ //56914
+@41 = ~Golem Cerveau~ //8447
+@42 = ~Elfe noir magicien~  //52916
+@43 = ~Duergar~
+@44 = ~Ombre démoniaque~  //70866
+@45 = ~Démombre~ //57736
+@46 = ~Bourreau Elfe noir~
+@47 = ~Démon~ //47510
+@48 = ~Golem magique~ //68642
+@49 = ~Elfe noir barman~ //50928
+
+/////////////DGItems
+@50 = ~Anneau de Spectre~ //64975
+@51 = ~Anneau d'Invisibilité majeure : Anneau de Spectre
+Un assassin du Téthyr, connu sous le seul nom de Spectre, utilisait autrefois cet anneau. Comme il restait invisible au cours de ses méfaits, les gens attribuaient ses victimes à des esprits ou des fantômes en colère.
+
+PARAMÈTRES :
+
+Capacités de charge :
+- Invisibilité majeure une fois par jour
+  Durée : 12 heures
+  Zone d'effet : l'utilisateur
+
+Poids : 0~ //66412
