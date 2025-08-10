@@ -1,0 +1,76 @@
+// Planar Sphere: Modron Spawn Script
+
+IF
+  XPLT(Player1,300000)
+  Global("Pxmettlespawn","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("a7#mdrqp",[2360.380],E)  // Rogue Modron (melee)
+    CreateCreature("a7#mdrro",[2360.380],E)  // Rogue Modron (ranged)
+    CreateCreature("a7#mdrmo",[2360.380],E)  // Rogue Modron
+    SetGlobal("Pxmettlespawn","GLOBAL",1)
+END
+
+IF
+  XPGT(Player1,299999)
+  XPLT(Player1,750000)
+  Global("Pxmettlespawn","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("a7#mdrqp",[2360.380],E)  // Rogue Modron (melee)
+    CreateCreature("a7#mdrqo",[2360.380],E)  // Rogue Modron (melee)
+    CreateCreature("a7#mdrro",[2360.380],E)  // Rogue Modron (ranged)
+    CreateCreature("a7#mdrro",[2360.380],E)  // Rogue Modron (ranged)
+    CreateCreature("a7#mdrmo",[2360.380],E)  // Rogue Modron
+    CreateCreature("a7#rclo",[2360.380],E)   // Low Threat Construct
+    SetGlobal("Pxmettlespawn","GLOBAL",1)
+END
+
+IF
+  XPGT(Player1,749999)
+  XPLT(Player1,1500000)
+  Global("Pxmettlespawn","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("a7#mdrqp",[2360.380],E)  // Rogue Modron (melee)
+    CreateCreature("a7#mdrqo",[2360.380],E)  // Rogue Modron (melee)
+    CreateCreature("a7#mdrro",[2360.380],E)  // Rogue Modron (ranged)
+    CreateCreature("a7#mdrro",[2360.380],E)  // Rogue Modron (ranged)
+    CreateCreature("a7#mdrmo",[2360.380],E)  // Rogue Modron
+    CreateCreature("a7#rchi",[2360.380],E)   // High Threat Construct
+    CreateCreature("a7#rclo",[2360.380],E)   // Low Threat Construct
+    SetGlobal("Pxmettlespawn","GLOBAL",1)
+END
+
+IF
+  XPGT(Player1,1499999)
+  XPLT(Player1,2000000)
+  Global("Pxmettlespawn","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("a7#mdrqp",[2360.380],E)  // Rogue Modron (melee)
+    CreateCreature("a7#mdrqo",[2360.380],E)  // Rogue Modron (melee)
+    CreateCreature("a7#mdrro",[2360.380],E)  // Rogue Modron (ranged)
+    CreateCreature("a7#mdrro",[2360.380],E)  // Rogue Modron (ranged)
+    CreateCreature("a7#rchi",[2360.380],E)   // High Threat Construct
+    CreateCreature("a7#rchi",[2360.380],E)   // High Threat Construct
+    CreateCreature("a7#rclo",[2360.380],E)   // Low Threat Construct
+    CreateCreature("a7#rclo",[2360.380],E)   // Low Threat Construct
+    SetGlobal("Pxmettlespawn","GLOBAL",1)
+END
+
+IF
+  XPGT(Player1,1999999)
+  Global("Pxmettlespawn","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("a7#mdrqp",[2360.380],E)  // Rogue Modron (melee)
+    CreateCreature("a7#mdrro",[2360.380],E)  // Rogue Modron (ranged)
+    CreateCreature("a7#rchi",[2360.380],E)   // High Threat Construct
+    CreateCreature("a7#rchi",[2360.380],E)   // High Threat Construct
+    CreateCreature("a7#rchi",[2360.380],E)   // High Threat Construct
+    CreateCreature("a7#rclo",[2360.380],E)   // Low Threat Construct
+    CreateCreature("a7#rclo",[2360.380],E)   // Low Threat Construct
+    CreateCreature("a7#rclo",[2360.380],E)   // Low Threat Construct
+    SetGlobal("Pxmettlespawn","GLOBAL",1)
+END

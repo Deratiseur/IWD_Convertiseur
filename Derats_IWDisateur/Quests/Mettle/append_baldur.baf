@@ -1,0 +1,9 @@
+IF
+  Global("A7#SpacewarpMage","GLOBAL",0)
+THEN
+  RESPONSE #100
+    AddStoreItem("Edion","a7#mscl2",1,1)
+	AddStoreItem("kieran2","a7#mscl2",1,1)
+	AddStoreItem("kuork3","a7#mscl2",1,1)
+    SetGlobal("A7#SpacewarpMage","GLOBAL",1)
+END
