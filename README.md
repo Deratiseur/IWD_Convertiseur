@@ -40,7 +40,7 @@ Ce module vous permet d'installer sur IWDEE certains mods prévus pour BG2EE. Il
 - <a href=https://github.com/Plutonium-X/1D_NPC_Moddie>Moddie</a>  
 - <a href=https://github.com/Plutonium-X/1D_NPC_Chiara>Chiara</a>  
 - <a href=https://github.com/Plutonium-X/1D_NPC_Malthis>Malthis</a>  
-- <a href=https://github.com/Plutonium-X/1D_NPC_LHorace>Horace</a>  
+- <a href=https://github.com/Plutonium-X/1D_NPC_Horace>Horace</a>  
 - <a href=https://github.com/Plutonium-X/1D_NPC_Xardas>Xardas</a>
 
 #### <ins>Arenes  de combat :<ins>
