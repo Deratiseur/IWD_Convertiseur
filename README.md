@@ -10,7 +10,7 @@
 [Link to original Mod Forum](https://www.baldursgateworld.fr/viewtopic.php?t=34964)
 
 Ce module vous permet d'installer sur IWDEE certains mods prévus pour BG2EE. Il fonctionne comme ceci :  
-1 : Copiez dans le répertoire de IWDEE (00798) le iwdisateur et tous les mods pour BG2EE qu'il gère que vous voudriez installer.  
+1 : Copiez dans le répertoire de IWDEE (00798) le IWDisateur et tous les mods pour BG2EE qu'il gère que vous voudriez installer.  
 2 : Installez le IWDisateur. Il prépare tous les mods.  
 3 : Installez tous les mods pour BG2EE que vous avez prévus. Ils sont prêts.  
 
