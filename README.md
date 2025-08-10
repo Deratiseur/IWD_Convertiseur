@@ -14,51 +14,46 @@ Ce module vous permet d'installer sur IWDEE certains mods prévus pour BG2EE. Il
 2 : Installez le IWDisateur. Il prépare tous les mods.  
 3 : Installez tous les mods pour BG2EE que vous avez prévus. Ils sont prêts.  
 
-## <ins>Modules que le Iwdisateur peut convertir et où ils débutent :<ins>
+### <ins>Modules que le Iwdisateur peut convertir et où ils débutent :<ins>
 #### <ins>Marchands :<ins>
-Mystigan  
-The Unusual Oddities  
-Under-Represented Items Mod  
-Dgitems  
-Sir Renal  
-Darron  
-RTT ItemPack	  
-The Improved Volcano! Pack  
-Volcanic armoury  
-IRStore  
+- Mystigan  
+- The Unusual Oddities  
+- Under-Represented Items Mod  
+- Dgitems  
+- Sir Renal  
+- Darron  
+- RTT ItemPack	  
+- The Improved Volcano! Pack  
+- Volcanic armoury  
+- IRStore
 
+#### <ins>Objets et sorts :<ins>
+- Isaac's Missile Storm  
+- The Tortured Soul Quest  
+- Heart of the Wood  
+- Demon Sumonning Ritual  
+- Red Dragon summoning  
+- Saradas Magic (version BGEE)  
 
-Objets et sorts :
-Isaac's Missile Storm	Kuldahar, Orrick le gris / Bois Isolé, Kiéran Nye
-The Tortured Soul Quest	Vallée des ombres, tombe après le plateau avec la Statue
-Heart of the Wood	Main tranchée, tour de Sheverash, 4ème étage.
-Demon Sumonning Ritual	Profondorn - Malavon
-Red Dragon summoning	Trial of the Luremaster - Hobart
-Saradas Magic (version BGEE)	Kuldahar, temple d'Illmater.
+#### <ins>NPCs One Day cheatés : :<ins>
+- Larsha  
+- Moddie  
+- Chiara	  
+- Malthis  
+- Horace	 
+- Xardas  
 
+#### <ins>Arenes  de combat : :<ins>
+- Umbra of T.R.O.W	 
+- Test your mettle  
 
-NPCs One Day cheatés :
-Larsha (romance incluse)	Havredest.
-Moddie 	Havredest, à coté du groupe de loups avant les orques.
-Chiara	Kuldahar, étage de l'hotel "L'Ombre du soir", Jabob dans le temple d'Illmater. Pas de Soldat amnien.
-Malthis (combats inclus)	Vallée des ombres, à l'entrée. Contact à l'étage de l'hotel "L'Ombre du soir", rencontres/combats en extérieur de nuit.
-Horace	Vallée des ombres, Temple de Myrkul.
-Xardas (niveau 16)	Kuldahar, si le groupe est de niveau 15 et + et en mode Cœur de Furie
+#### <ins>Quêtes : :<ins>
+- Ooze's Lounge	 
+- Tales of the Deep Gardens  
+- Tower of Deception	 
+- Dungeon Crawl  
 
-
-Arenes  de combat :
-Umbra of T.R.O.W	Automatique dés que le player1 atteint le niveau 14.
-Test your mettle	Modrones en maraude sur l'Ile aux tertres.	
-
-
-Quêtes :
-Ooze's Lounge	Kuldahar - nouvelle entrée proche de l'entrée.
-Tales of the Deep Gardens  	Kuldahar, chapitre 3 minimum. Toutes les énigmes relocalisées.
-Tower of Deception	Kuldahar - Auberge "La cave aux racines", chapitre 3 minimum.
-Dungeon Crawl	Bois Isolé - Auberge "Le Gibet siffleur".
- 
-
-Divers :
-Pack Mule 	Kuldahar, à l'entrée.
-Revisit The Old Haunt	En lançant Souhait limité ou Souhait.
-Selphira Tweaks	(bonus : permet d'obtenir de l'xp en désamorçant les pièges)
+#### <ins>Divers : :<ins>
+- Pack Mule  
+- Revisit The Old Haunt  
+- Selphira Tweaks
