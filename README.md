@@ -14,12 +14,8 @@ Ce module vous permet d'installer sur IWDEE certains mods prévus pour BG2EE. Il
 2 : Installez le IWDisateur. Il prépare tous les mods.  
 3 : Installez tous les mods pour BG2EE que vous avez prévus. Ils sont prêts.  
 
-Note :  
-Certains mods de quêtes font encore référence dans le texte à Athkatla et certains de ses quartiers. Je n'ai pas pu changer cela car il m'aurait fallu changer les références dans toutes les langues, et cela m'est impossible dans les langues exotiques.  
-
-
-Modules que le Iwdisateur peut convertir et où ils débutent :
-Marchands :
+## <ins>Modules que le Iwdisateur peut convertir et où ils débutent :<ins>
+# <ins>Marchands :<ins>
 Mystigan	Kuldahar
 The Unusual Oddities Shop	Kuldahar
 Under-Represented Items Mod	Kuldahar, forge de Coulon /  Bois Isolé, comptoir du commerce
