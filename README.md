@@ -15,17 +15,17 @@ Ce module vous permet d'installer sur IWDEE certains mods prévus pour BG2EE. Il
 3 : Installez tous les mods pour BG2EE que vous avez prévus. Ils sont prêts.  
 
 ## <ins>Modules que le Iwdisateur peut convertir et où ils débutent :<ins>
-# <ins>Marchands :<ins>
-Mystigan	Kuldahar
-The Unusual Oddities Shop	Kuldahar
-Under-Represented Items Mod	Kuldahar, forge de Coulon /  Bois Isolé, comptoir du commerce
-Dgitems	Kuldahar, Orrick.
-Sir Renal	Kuldahar, temple d'Illmater
-Darron	Kuldahar, planqué entre les racines de l'arbre, au nord.
-RTT ItemPack	Bois Isolé, Kiéran Nye. Si divisé : village caché des svirfnebelins / différents marchands du Bois isolé / Édion Caradoc. 
-The Improved Volcano! Pack	Bois Isolé, devant le temple de Waukine
-Volcanic armoury	Distribué entre de nombreux marchands + active le magasin de l'Ombre du soir après résolution de la quête de l'anneau.
-IRStore	Kuldahar / Bois Isolé / Trial of the Luremaster dans la cachette de Hobart.
+#### <ins>Marchands :<ins>
+Mystigan  
+The Unusual Oddities  
+Under-Represented Items Mod  
+Dgitems  
+Sir Renal  
+Darron  
+RTT ItemPack	  
+The Improved Volcano! Pack  
+Volcanic armoury  
+IRStore  
 
 
 Objets et sorts :
