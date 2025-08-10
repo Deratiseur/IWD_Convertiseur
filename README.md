@@ -16,7 +16,7 @@ Ce module vous permet d'installer sur IWDEE certains mods prévus pour BG2EE. Il
 
 ### <ins>Modules que le Iwdisateur peut convertir et où ils débutent :<ins>
 #### <ins>Marchands :<ins>
-- Mystigan  
+- <a href=https://akadis.baldursgateworld.fr/Mystigan/MystiganFr.html>Mystigan</a>  
 - The Unusual Oddities  
 - Under-Represented Items Mod  
 - Dgitems  
@@ -35,7 +35,7 @@ Ce module vous permet d'installer sur IWDEE certains mods prévus pour BG2EE. Il
 - Red Dragon summoning  
 - Saradas Magic (version BGEE)  
 
-#### <ins>NPCs One Day cheatés : :<ins>
+#### <ins>NPCs One Day cheatés :<ins>
 - Larsha  
 - Moddie  
 - Chiara	  
@@ -43,17 +43,17 @@ Ce module vous permet d'installer sur IWDEE certains mods prévus pour BG2EE. Il
 - Horace	 
 - Xardas  
 
-#### <ins>Arenes  de combat : :<ins>
+#### <ins>Arenes  de combat :<ins>
 - Umbra of T.R.O.W	 
 - Test your mettle  
 
-#### <ins>Quêtes : :<ins>
+#### <ins>Quêtes :<ins>
 - Ooze's Lounge	 
 - Tales of the Deep Gardens  
 - Tower of Deception	 
 - Dungeon Crawl  
 
-#### <ins>Divers : :<ins>
+#### <ins>Divers :<ins>
 - Pack Mule  
 - Revisit The Old Haunt  
 - Selphira Tweaks
