@@ -153,23 +153,6 @@ COPY ~Volcano/sto/ZODESAK.STO~ ~Volcano/sto/ZODESAK.STO~
 WRITE_ASCII 0x124 ~SCKILL~ #8
 END
 
-ACTION_IF DIRECTORY_EXISTS ~VolcanicArmoury~ BEGIN //Volcanic Armoury
-COPY ~VolcanicArmoury/setup-VolcanicArmoury.tp2~ ~VolcanicArmoury/setup-VolcanicArmoury.tp2~
-REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
-REPLACE_TEXTUALLY ~doghma.sto~ ~kutemple.sto~
-REPLACE_TEXTUALLY ~roger.sto~ ~kuoswald.sto~
-REPLACE_TEXTUALLY ~bernard2.sto~ ~shlehlan.sto~
-REPLACE_TEXTUALLY ~ribald.sto~ ~kusmith.sto~
-REPLACE_TEXTUALLY ~murcrag.sto~ ~kuork0.sto~
-REPLACE_TEXTUALLY ~temhelm.sto~ ~kugerth.sto~ 
-REPLACE_TEXTUALLY ~temlath.sto~ ~kutemple.sto~
-REPLACE_TEXTUALLY ~TRGENI01.sto~ ~de_lib.sto~
-REPLACE_TEXTUALLY ~UDDROW22.sto~ ~ldd_nym.sto~
-REPLACE_TEXTUALLY ~FFBART.sto~ ~Kuinn3.sto~
-REPLACE_TEXTUALLY "ldd_nym.sto~
-WRITE_LONG 0x10 THIS | BIT0 | BIT1 | BIT2 | BIT12" "ldd_nym.sto~"
-END
-
 ACTION_IF DIRECTORY_EXISTS ~IRStore~ BEGIN //IRstore
 COPY ~IRStore/setup-IRStore.tp2~ ~IRStore/setup-IRStore.tp2~
 REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
@@ -232,6 +215,23 @@ END
 
 
 ///////////////////////////  Objets et sorts  ///////////////////////////
+
+ACTION_IF DIRECTORY_EXISTS ~VolcanicArmoury~ BEGIN //Volcanic Armoury
+COPY ~VolcanicArmoury/setup-VolcanicArmoury.tp2~ ~VolcanicArmoury/setup-VolcanicArmoury.tp2~
+REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
+REPLACE_TEXTUALLY ~doghma.sto~ ~kutemple.sto~
+REPLACE_TEXTUALLY ~roger.sto~ ~kuoswald.sto~
+REPLACE_TEXTUALLY ~bernard2.sto~ ~shlehlan.sto~
+REPLACE_TEXTUALLY ~ribald.sto~ ~kusmith.sto~
+REPLACE_TEXTUALLY ~murcrag.sto~ ~kuork0.sto~
+REPLACE_TEXTUALLY ~temhelm.sto~ ~kugerth.sto~ 
+REPLACE_TEXTUALLY ~temlath.sto~ ~kutemple.sto~
+REPLACE_TEXTUALLY ~TRGENI01.sto~ ~de_lib.sto~
+REPLACE_TEXTUALLY ~UDDROW22.sto~ ~ldd_nym.sto~
+REPLACE_TEXTUALLY ~FFBART.sto~ ~Kuinn3.sto~
+REPLACE_TEXTUALLY "ldd_nym.sto~
+WRITE_LONG 0x10 THIS | BIT0 | BIT1 | BIT2 | BIT12" "ldd_nym.sto~"
+END
 
 ACTION_IF DIRECTORY_EXISTS ~Isaac's_Missile_Storm~ BEGIN //Isaac's Missile Storm
 COPY ~Isaac's_Missile_Storm/SETUP-Isaac's_Missile_Storm.tp2~ ~Isaac's_Missile_Storm/SETUP-Isaac's_Missile_Storm.tp2~
