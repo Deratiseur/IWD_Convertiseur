@@ -48,8 +48,6 @@ Ce module vous permet d'installer sur IWDEE certains mods prévus pour BG2EE. Il
 - <a href=https://github.com/Argent77/A7-TestYourMettle>Test your mettle</a>
 
 #### <ins>Quêtes :<ins>
-- <a href=https://downloads.weaselmods.net/download/oozes-lounge/>Ooze's Lounge</a>  
-- <a href=https://downloads.weaselmods.net/download/tales-of-the-deep-gardens/>Tales of the Deep Gardens</a>  
 - <a href=https://github.com/Black-Wyrm-Lair/TowerOfDeception>Tower of Deception</a>  
 - <a href=https://github.com//Pocket-Plane-Group/Dungeon_Crawl>Dungeon Crawl</a>
 
@@ -99,8 +97,6 @@ This module allows you to install certain mods designed for BG2EE on IWDEE. It w
 - <a href=https://github.com/Argent77/A7-TestYourMettle>Test your mettle</a>
 
 #### <ins>Quests:<ins>
-- <a href=https://downloads.weaselmods.net/download/oozes-lounge/>Ooze's Lounge</a>  
-- <a href=https://downloads.weaselmods.net/download/tales-of-the-deep-gardens/>Tales of the Deep Gardens</a>  
 - <a href=https://github.com/Black-Wyrm-Lair/TowerOfDeception>Tower of Deception</a>  
 - <a href=https://github.com//Pocket-Plane-Group/Dungeon_Crawl>Dungeon Crawl</a>
 
