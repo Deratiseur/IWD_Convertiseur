@@ -1,0 +1,3 @@
+v1 : première mise en ligne.
+v1.1 : correction pur Larsha (qui n'en avait pas besoin dans mes test, wtf ?)
+V2 : suppression de la gestion De Ooze's Lounge et Tales of the Deep Garden, Lava ayant exprimé son désaccord.

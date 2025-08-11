@@ -1,6 +1,6 @@
 BACKUP ~Derats_IWDisateur/Backup~
 AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
-VERSION ~v1.1~
+VERSION ~v2~
 
 LANGUAGE ~Francais~
 	~French~
@@ -680,128 +680,10 @@ COPY ~DC/German/O#QUEST.tra~ ~DC/French/O#QUEST.tra~
 	 REPLACE_TEXTUALLY ~den slums~ ~von Waldheim~
 END
 
-ACTION_IF DIRECTORY_EXISTS ~TotDG~ BEGIN //Tales of the Deep Gardens
-COPY ~Derats_IWDisateur/Quests/TotDG~ ~Override~
-COPY ~TotDG/install.tph~ ~TotDG/install.tph~
-REPLACE_TEXTUALLY ~bg2ee~ ~bg2ee iwdee~
-REPLACE_TEXTUALLY ~merchant.sto~ ~kugerth.sto~
-REPLACE_TEXTUALLY ~AR0400.bcs~ ~AR2000.bcs~
-REPLACE_TEXTUALLY ~AR0500.bcs~ ~AR1000.bcs~
-REPLACE_TEXTUALLY ~AR0522.bcs~ ~AR1000.bcs~
-REPLACE_TEXTUALLY ~AR0509.bcs~ ~AR1000.bcs~
-REPLACE_TEXTUALLY ~AR0802.bcs~ ~AR3401.bcs~
-REPLACE_TEXTUALLY ~AR0809.bcs~ ~AR3301.bcs~
-REPLACE_TEXTUALLY ~AR0900.bcs~ ~AR2100.bcs~
-REPLACE_TEXTUALLY ~AR1000.bcs~ ~AR2100.bcs~
-REPLACE_TEXTUALLY ~AR5500.bcs~ ~AR9500.bcs~
-REPLACE_TEXTUALLY ~NPC REACTIONS~ ~NPC REACTIONS
-/*~
-REPLACE_TEXTUALLY ~end of main component~ ~end of main component
-*/~
-COPY ~TotDG/Scripts/AR0400.baf~ ~TotDG/Scripts/AR0400.baf~
-REPLACE_TEXTUALLY ~AR0400~ ~AR2000~
-REPLACE_TEXTUALLY ~1097.3004],3)~ ~261.1760],SE)~
-COPY ~TotDG/Scripts/AR0802.baf~ ~TotDG/Scripts/AR0802.baf~
-REPLACE_TEXTUALLY ~AR0802~ ~AR3401~
-REPLACE_TEXTUALLY ~693.237],3)~ ~680.711],S)~
-REPLACE_TEXTUALLY ~~~~~!Global("DGSkeletonExist","AR3401",1)~~~~~ ~~~~~!Global("DGSkeletonExist","AR3401",1) GlobalGT("Chapter","GLOBAL",2)~~~~~
-COPY ~TotDG/Scripts/AR0809.baf~ ~TotDG/Scripts/AR0809.baf~
-REPLACE_TEXTUALLY ~AR0809~ ~AR3301~
-REPLACE_TEXTUALLY ~975.240],3)~ ~1340.760],W)~
-REPLACE_TEXTUALLY ~~~~~!Global("DGSkeletonExist","AR3301",1)~~~~~ ~~~~~!Global("DGSkeletonExist","AR3301",1) GlobalGT("Chapter","GLOBAL",2)~~~~~
-COPY ~TotDG/Scripts/AR0900.baf~ ~TotDG/Scripts/AR0900.baf~
-REPLACE_TEXTUALLY ~AR0900~ ~AR2100~
-REPLACE_TEXTUALLY ~696.2234],3)~ ~3315.648],S)~
-REPLACE_TEXTUALLY ~~~~~!Global("DGEvilPriestExist","AR2100",1)~~~~~ ~~~~~!Global("DGEvilPriestExist","AR2100",1) GlobalGT("Chapter","GLOBAL",2)~~~~~
-COPY ~TotDG/Scripts/AR1000.baf~ ~TotDG/Scripts/AR1000.baf~
-REPLACE_TEXTUALLY ~AR1000~ ~AR2100~
-REPLACE_TEXTUALLY ~2980.1244~ ~2587.1880~
-REPLACE_TEXTUALLY ~~~~~!Global("DGWizardExist","AR2100",1)~~~~~ ~~~~~!Global("DGWizardExist","AR2100",1) GlobalGT("Chapter","GLOBAL",2)~~~~~
-COPY ~TotDG/Scripts/AR5500.baf~ ~TotDG/Scripts/AR9500.baf~
-REPLACE_TEXTUALLY ~AR5500~ ~AR9500~
-REPLACE_TEXTUALLY ~1867.1332~ ~2108.2285~
-COPY ~TotDG/Scripts/ARLDV8.baf~ ~TotDG/Scripts/ARLDV8.baf~
-REPLACE_TEXTUALLY ~AR1000~ ~AR2100~
-REPLACE_TEXTUALLY ~2397.701],4~ ~2536.1901],NEE~
-REPLACE_TEXTUALLY ~2428.830],4~ ~2550.1952],NEE~
-REPLACE_TEXTUALLY ~2442.872],4~ ~2473.1918],NEE~
-REPLACE_TEXTUALLY ~2570.806],4~ ~2495.1968],NEE~
-REPLACE_TEXTUALLY ~2575.741],4~ ~2427.1923],NEE~
-REPLACE_TEXTUALLY ~2522.644],4~ ~2440.1972],NEE~
-	ACTION_IF ( NOT ~%LANGUAGE%~ STR_EQ ~french~) BEGIN //Code par JohnBob
-	OUTER_SPRINT "Lang0" ""
-	OUTER_SPRINT "Lang1" ""
-	END
-	ACTION_IF (~%LANGUAGE%~ STR_EQ ~french~) BEGIN
-	OUTER_SPRINT "Lang0" "d'"
-	OUTER_SPRINT "Lang1" "de "
-	END
-	COPY ~TotDG/Translations/%LANGUAGE%~ ~TotDG/Translations/%LANGUAGE%~
-	REPLACE_TEXTUALLY ~%Lang0%Athkatla~ ~%Lang1%Kuldahar~ // pour les Athkatla avec prépositions
-	REPLACE_TEXTUALLY ~Athkatla~ ~Kuldahar~ // pour les Athkatla sans prépositions
-END
-
-ACTION_IF DIRECTORY_EXISTS ~Ooze~ BEGIN //Oozes Lounge 
-COPY ~Derats_IWDisateur/Quests/Ooze/Copy~ ~Override~
-COPY ~Derats_IWDisateur/Quests/Ooze/Jellygr.cre~ ~Override~	SAY NAME1 @8	SAY NAME2 @8
-COPY ~Derats_IWDisateur/Quests/Ooze/Jelmus01.cre~ ~Override~ SAY NAME1 @9	SAY NAME2 @9
-COPY ~Derats_IWDisateur/Quests/Ooze/ring04.itm~ ~Override~ 	SAY NAME2 @10	SAY DESC @11
-COPY ~Derats_IWDisateur/Quests/Ooze/bow17.itm~ ~Override~ 	SAY NAME2 @12	SAY DESC @13
-COPY ~Derats_IWDisateur/Quests/Ooze/bow18.itm~ ~Override~ 	SAY NAME2 @14	SAY DESC @15
-COPY ~Derats_IWDisateur/Quests/Ooze/sw2h11.itm~ ~Override~ 	SAY NAME2 @16	SAY DESC @17
-COPY ~Derats_IWDisateur/Quests/Ooze/sw1h22.itm~ ~Override~ 	SAY NAME2 @18	SAY DESC @19
-COPY ~Derats_IWDisateur/Quests/Ooze/xbow09.itm~ ~Override~ 	SAY NAME2 @20	SAY DESC @21
-COPY ~Derats_IWDisateur/Quests/Ooze/amul18.itm~ ~Override~ 	SAY NAME2 @22	SAY DESC @23
-COPY ~Derats_IWDisateur/Quests/Ooze/wand09.itm~ ~Override~ 	SAY NAME2 @24	SAY DESC @25
-COPY ~Derats_IWDisateur/Quests/Ooze/sw1h41.itm~ ~Override~ 	SAY NAME2 @26	SAY DESC @27
-COPY ~Derats_IWDisateur/Quests/Ooze/sw1h73.itm~ ~Override~ 	SAY NAME2 @28	SAY DESC @29
-COPY ~Derats_IWDisateur/Quests/Ooze/sw1h75.itm~ ~Override~ 	SAY NAME2 @30	SAY DESC @31
-COPY ~Derats_IWDisateur/Quests/Ooze/helm05.itm~ ~Override~ 	SAY NAME2 @32	SAY DESC @33
-COPY ~Ooze/ooze.TP2~ ~Ooze/ooze.TP2~
-REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
-REPLACE_TEXTUALLY ~AR0502.bcs~ ~AR3502.bcs~
-REPLACE_TEXTUALLY ~AR0334.bcs~ ~AR1003.bcs~
-REPLACE_TEXTUALLY ~Ooze/lib/AddBG2_AR0400Door.tph~ ~Derats_IWDisateur/Quests/Ooze/Entry.tph~
-COPY ~Ooze/Scripts/AR0502.baf~ ~Ooze/Scripts/AR0502.baf~
-REPLACE_TEXTUALLY ~AR0502~ ~AR3502~
-REPLACE_TEXTUALLY ~Bed~ ~Desk~
-COPY ~Ooze/Dialogues/L#NSCLE.D~ ~Ooze/Dialogues/L#NSCLE.D~
-	 ~Ooze/Dialogues/L#NSNYM.D~ ~Ooze/Dialogues/L#NSNYM.D~ LPF No_Banters END
-COPY ~Ooze/Dialogues/cromwell.D~ ~Ooze/Dialogues/cromwell.D~
-REPLACE_TEXTUALLY ~WSMITH01~ ~DARUNDEL~
-REPLACE_TEXTUALLY ~BOTSMITH~ ~DARUNDEL~
-COPY_EXISTING ~Ooze/lib/items_ee.tpa~ ~Ooze/lib/items_ee.tpa~
-REPLACE_TEXTUALLY ~firmon03~ ~beholdh~
-COPY_EXISTING ~Ooze/areas/l#ns01.are~ ~Ooze/areas/l#ns01.are~ WRITE_ASCII 0x19c ~MCAR~ #8 WRITE_ASCII 0x2ac ~MCAR~ #8
-WRITE_ASCII 0x3bc ~MCAR~ #8 WRITE_ASCII 0x4cc ~MCAR~ #8 WRITE_ASCII 0x5dc ~MCAR~ #8 WRITE_ASCII 0x6ec ~MCAR~ #8
-WRITE_ASCII 0x7fc ~MCAR~ #8 WRITE_ASCII 0x90c ~MCAR~ #8 WRITE_ASCII 0xba8 ~AR2100~ #8
-COPY_EXISTING ~Mcar.cre~ ~Override~	WRITE_ASCII 0x250 ~GNELEM1~ #8
-COPY_EXISTING ~Ooze/stores/l#nslu2.sto~ ~Ooze/stores/l#nslu2.sto~ WRITE_ASCII 0x374 ~SCPWS~ #8 WRITE_ASCII 0x3ac ~SCDFOG~ #8
-	ACTION_IF ( NOT ~%LANGUAGE%~ STR_EQ ~french~) BEGIN
-	OUTER_SPRINT "Lang0" ""
-	OUTER_SPRINT "Lang1" ""
-	END
-	ACTION_IF (~%LANGUAGE%~ STR_EQ ~french~) BEGIN
-	OUTER_SPRINT "Lang0" "d'"
-	OUTER_SPRINT "Lang1" "de "
-	END
-	COPY ~Ooze/Translations/%LANGUAGE%~ ~Ooze/Translations/%LANGUAGE%~
-	REPLACE_TEXTUALLY ~%Lang0%Athkatla~ ~%Lang1%Kuldahar~
-	REPLACE_TEXTUALLY ~Athkatla~ ~Kuldahar~
-COPY_EXISTING ~AR2100.are~ ~Override~ ADD_MAP_NOTE #309 #1887 ~Gray~ @7
-END
-
 //The sellesword _ - Quasi tout fait - Demande comme ressources des fichiers DLG dont aucune entrée ne correspond dans IWD. C'est mort.
-
-//The White queen - Tout fait - 4 heures passés sur cette %§£µ$# de woldmap sans succès.
-//Innershade - worlmap
 //Dark Tiding - worlmap
-//In Love, Undeath - worlmap
 //Throne of the Mad God - worlmap
 //Call of the Lost Goddess - worlmap
-//Juniper and the Stone Leech - worlmap
-//The Journey to the Whin Hill - worlmap
-//The Bloodied Stings of Barovia - worlmap
 //Secret of Bone Hill - Mod Worlmap requis
 //Loretaker - Entrée dans les égouts qui mène... à des égouts.
 
