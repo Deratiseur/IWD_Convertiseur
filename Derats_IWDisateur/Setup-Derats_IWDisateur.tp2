@@ -1,6 +1,6 @@
 BACKUP ~Derats_IWDisateur/Backup~
 AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
-VERSION ~v1~
+VERSION ~v1.1~
 
 LANGUAGE ~Francais~
 	~French~
@@ -508,6 +508,8 @@ DECOMPILE_AND_PATCH BEGIN
 	BUT_ONLY
 COPY ~Larsha/dialog/larcespe.d~ ~Larsha/dialog/larcespe.d~
 REPLACE_TEXTUALLY ~BOTSMITH~ ~DCONLAN~
+COPY ~Larsha/dialog/larcespe.d~ ~Larsha/dialog/larinter.d~
+REPLACE_TEXTUALLY ~VAELASA~ ~DCHALC~
 COPY ~Larsha/Larsha.cre~ ~Larsha/Larsha.cre~
 WRITE_LONG 0x018 1900
 WRITE_BYTE 0x024 6
