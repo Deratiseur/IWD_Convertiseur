@@ -1,6 +1,6 @@
 BACKUP ~Derats_IWDisateur/Backup~
 AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
-VERSION ~v2.2~
+VERSION ~v3~
 
 LANGUAGE ~Francais~
 	~French~
@@ -204,14 +204,15 @@ REPLACE_TEXTUALLY "book08~ position=~LAST~ flags=~identified~
     END // Existing item" "book08~ position=~LAST~ flags=~identified~
     END // Existing item
 	/*"
-REPLACE_TEXTUALLY ~// Bam for Ã©pÃ©e de Baldurien 
-  END~ ~// Bam for Ã©pÃ©e de Baldurien 
+REPLACE_TEXTUALLY ~// Bam for épée de Baldurien 
+  END~ ~// Bam for épée de Baldurien 
   END
   */~  
 END
 
-//Wares Of The Planes - Tout fait - ce n'est PAS juste un magasin, et lui supprimer ci et Ã§a parce que Ã§a n'est pas possible dans IWD c'est le massacrer.
-//Trovador REO - "Tout fait" - Ã  tellement blastÃ© mon IWDEE que mÃªme aprÃ¨s dÃ©sinstallation mes sauvegardes ne se chargeaient plus.
+//Wares Of The Planes - Tout fait - ce n'est PAS juste un magasin, et lui supprimer ci et ça parce que ça n'est pas possible dans IWD c'est le massacrer.
+//Trovador REO - "Tout fait" - à tellement blasté mon IWDEE que même après désinstallation mes sauvegardes ne se chargeaient plus.
+//Genwas Kaufmannsmod - Essayé, vraiment très bof.
 
 
 ///////////////////////////  Objets et sorts  ///////////////////////////
@@ -298,7 +299,7 @@ REPLACE_TEXTUALLY ~protagonist~ ~LastTalkedToBy~
 END
 
 
-///////////////////////////  One Day Npcs (cheatÃ©s)  ///////////////////////////
+///////////////////////////  One Day Npcs (cheatés)  ///////////////////////////
 
 ACTION_IF DIRECTORY_EXISTS ~Horace~ BEGIN //Horace
 COPY ~Horace/Setup-Horace.tp2~ ~Horace/Setup-Horace.tp2~
@@ -539,19 +540,39 @@ LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 233	target = 1	parameter1 = 1	parameter2 = 1
 LPF	ADD_CRE_EFFECT	INT_VAR	opcode = 233	target = 1	parameter1 = 2	parameter2 = 114	timing = 9	END
 END
 
+ACTION_IF DIRECTORY_EXISTS ~k4morgul~ BEGIN //morgul
+COPY ~Derats_IWDisateur/Npcs/Morgul~ ~Override~
+COPY ~k4morgul/setup-k4morgul.tp2~ ~k4morgul/setup-k4morgul.tp2~
+REPLACE_TEXTUALLY ~bgee~ ~iwdee~
+REPLACE_TEXTUALLY ~ar2200~ ~ar2000~
+REPLACE_TEXTUALLY ~4902~ ~1802~
+REPLACE_TEXTUALLY ~3376~ ~1276~
+REPLACE_TEXTUALLY ~4890~ ~1790~
+REPLACE_TEXTUALLY ~3460~ ~1360~
+REPLACE_TEXTUALLY ~4860~ ~1760~
+REPLACE_TEXTUALLY ~3340~ ~1240~
+REPLACE_TEXTUALLY ~3410~ ~1310~
+REPLACE_TEXTUALLY ~4950~ ~1850~
+REPLACE_TEXTUALLY ~4890~ ~1790~
+REPLACE_TEXTUALLY ~3460~ ~1160~
+COPY ~k4morgul/cre/k4morg.cre~ ~k4morgul/cre/k4morg.cre~ WRITE_ASCII 0x2f8 ~pxspi118~ #8 WRITE_ASCII 0x474 ~pxspi118~ #8
+COPY ~k4morgul/cre/k4drowpr.cre~ ~k4morgul/cre/k4drowpr.cre~ WRITE_ASCII 0x928 ~SHLD01~ #8
+COPY ~k4morgul/are/kk0001.are~ ~k4morgul/are/kk0001.are~ WRITE_ASCII 0x17a4 ~AR2000~ #8
+COPY ~k4morgul/baf/k4duegar.baf~ ~k4morgul/baf/k4duegar.baf~ REPLACE_TEXTUALLY ~k4inv~ ~83~
+END
 
 
-//Thael - Sa quÃªte : rechercher et trouver SendaÃ¯.
-//Ninafer - RÃ©fÃ©rence Irenicus, Imoen
-//Mhoram - RÃ©fÃ©rence enfant de Bhaal, rÃ©fÃ©rence liche du pont
-//Mawgul - RÃ©fÃ©rence enfant de Bhaal
-//Mur'Neth - Une fois les banters enlevÃ©s il ne lui reste plus grand chose.
+//Thael - Sa quête : rechercher et trouver Sendaï.
+//Ninafer - Référence Irenicus, Imoen
+//Mhoram - Référence enfant de Bhaal, référence liche du pont
+//Mawgul - Référence enfant de Bhaal
+//Mur'Neth - Une fois les banters enlevés il ne lui reste plus grand chose.
 
-//TOUS les pnjs "normaux" : RÃ©fÃ©rences enfant de Bhaal, Irenicus, Imoen, zones de SOA/TOB.
+//TOUS les pnjs "normaux" : Références enfant de Bhaal, Irenicus, Imoen, zones de SOA/TOB.
 
 
 
-///////////////////////////  QuÃªtes  ///////////////////////////
+///////////////////////////  Quêtes  ///////////////////////////
 
 
 ACTION_IF DIRECTORY_EXISTS ~tod~ BEGIN //Tower of Deception
@@ -677,9 +698,9 @@ COPY ~DC/English/O#QUEST.tra~ ~DC/English/O#QUEST.tra~
 	 REPLACE_TEXTUALLY ~the slums~ ~Lonelywood~
 COPY ~DC/French/O#QUEST.tra~ ~DC/French/O#QUEST.tra~
 	 ~DC/French/setup-DC.tra~ ~DC/French/setup-DC.tra~
-	 REPLACE_TEXTUALLY ~Ã  Athkatla~ ~au Bois isolÃ©~
-	 REPLACE_TEXTUALLY ~sur le toit de la Couronne de Cuivre~ ~au Bois isolÃ©~
-	 REPLACE_TEXTUALLY ~des Bas-Quartiers~ ~du Bois isolÃ©~
+	 REPLACE_TEXTUALLY ~à Athkatla~ ~au Bois isolé~
+	 REPLACE_TEXTUALLY ~sur le toit de la Couronne de Cuivre~ ~au Bois isolé~
+	 REPLACE_TEXTUALLY ~des Bas-Quartiers~ ~du Bois isolé~
 COPY ~DC/German/O#QUEST.tra~ ~DC/French/O#QUEST.tra~
 	 ~DC/German/setup-DC.tra~ ~DC/French/setup-DC.tra~
 	 REPLACE_TEXTUALLY ~Athkatla~ ~Waldheim~
@@ -689,16 +710,16 @@ COPY ~DC/German/O#QUEST.tra~ ~DC/French/O#QUEST.tra~
 	 REPLACE_TEXTUALLY ~den slums~ ~von Waldheim~
 END
 
-//The sellesword _ - Quasi tout fait - Demande comme ressources des fichiers DLG dont aucune entrÃ©e ne correspond dans IWD. C'est mort.
+//The sellsword _ - Quasi tout fait - Demande comme ressources des fichiers DLG dont aucune entrée ne correspond dans IWD. C'est mort.
 //Dark Tiding - worlmap
 //Throne of the Mad God - worlmap
 //Call of the Lost Goddess - worlmap
 //Secret of Bone Hill - Mod Worlmap requis
-//Loretaker - EntrÃ©e dans les Ã©gouts qui mÃ¨ne... Ã  des Ã©gouts.
+//Loretaker - Entrée dans les égouts qui mène... à des égouts.
+//Tous les mods de quêtes de Lava, NON. Et ceux que j'avais prévu de traduire, NON aussi.
 
 
-
-///////////////////////////  ArÃ¨nes  ///////////////////////////
+///////////////////////////  Arènes  ///////////////////////////
 
 ACTION_IF DIRECTORY_EXISTS ~UoT~ BEGIN //Arena of T.R.O.W
 COPY ~Uot/Setup-UoT.tp2~ ~Uot/Setup-UoT.tp2~
@@ -741,10 +762,12 @@ REPLACE_TEXTUALLY "SAY UNIDENTIFIED_DESC @2131" "SAY UNIDENTIFIED_DESC @2131 SAY
 REPLACE_TEXTUALLY "SAY IDENTIFIED_DESC @2131" "SAY IDENTIFIED_DESC @2131  SAY NAME2 @99998"
 END
 
-//Duality's Odd Quest (Imnesvale) - crÃ©e des faux maires, des faux vendeurs, etc.... //RecrÃ©er faux maires de Bois isolÃ© ?
-//Tomoyo and the Underground City - OÃ™ mettre l'entrÃ©e vers la crypte de la liche ? Ok, trouvÃ©, mais mod nul
+
+
+//Duality's Odd Quest (Imnesvale) - crée des faux maires, des faux vendeurs, etc.... //Recréer faux maires de Bois isolé ?
+//Tomoyo and the Underground City - Incroyable le nombre de références/ressources qu'il utilise ! Pour un mod somme toute nul....
 //Tales of Anegh 
-//Pits of Despair - A besoin de BEAUCOUP de ressources de BG2EE nÂ’Ã©tant pas dans IWDEE.
+//Pits of Despair - A besoin de BEAUCOUP de ressources de BG2EE n’étant pas dans IWDEE.
 
 
 ///////////////////////////  Divers  ///////////////////////////
@@ -769,5 +792,3 @@ ACTION_IF DIRECTORY_EXISTS ~SelphiraTweaks~ BEGIN //Selphira Tweaks
 COPY ~SelphiraTweaks/SelphiraTweaks.tp2~ ~SelphiraTweaks/SelphiraTweaks.tp2~
 REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
 END
-
-
