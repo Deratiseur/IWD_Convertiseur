@@ -1,6 +1,6 @@
 BACKUP ~Derats_IWDisateur/Backup~
 AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
-VERSION ~v2~
+VERSION ~v2.2~
 
 LANGUAGE ~Francais~
 	~French~
@@ -335,6 +335,14 @@ WRITE_LONG 0x46c 1
 END
 
 ACTION_IF DIRECTORY_EXISTS ~Malthis~ BEGIN //Malthis
+COPY ~Derats_IWDisateur/Npcs/Malthis~ ~Override~
+APPEND ~Spell.ids~ ~3690 HOLY_LIGHT_FROM_ABOVE
+3752 HELL_PRIDE_GOOD
+3760 HELL_GAIN_CON
+3761 HELL_GAIN_DEX
+3762 HELL_GAIN_WIS
+3764 HELL_GAIN_STR~
+BUT_ONLY
 COPY ~Malthis/Setup-Malthis.tp2~ ~Malthis/Setup-Malthis.tp2~
 REPLACE_TEXTUALLY ~AR0300.bcs~ ~AR3000.bcs~
 REPLACE_TEXTUALLY ~BG2EE~ ~BGEE IWDEE~
@@ -761,4 +769,5 @@ ACTION_IF DIRECTORY_EXISTS ~SelphiraTweaks~ BEGIN //Selphira Tweaks
 COPY ~SelphiraTweaks/SelphiraTweaks.tp2~ ~SelphiraTweaks/SelphiraTweaks.tp2~
 REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
 END
+
 
