@@ -1,0 +1,12 @@
+v1.1 :
+Correction pur Larsha (qui n'en avait pas besoin dans mes test, wtf ?)
+
+v2 :
+-Suppression de la gestion De Ooze's Lounge et Tales of the Deep Garden, Lava ayant exprimé son désaccord.
+
+v2.1 
+-Autre correction sur Larsha.
+
+V3 :
+- Ajout de Morgul npnc.
+- Correction sur Malthis.
