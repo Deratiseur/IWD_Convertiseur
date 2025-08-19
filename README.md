@@ -42,6 +42,7 @@ Ce module vous permet d'installer sur IWDEE certains mods prévus pour BG2EE. Il
 - <a href=https://github.com/Plutonium-X/1D_NPC_Malthis>Malthis</a>  
 - <a href=https://github.com/Plutonium-X/1D_NPC_Horace>Horace</a>  
 - <a href=https://github.com/Plutonium-X/1D_NPC_Xardas>Xardas</a>
+- <a href=https://github.com/toopok4k3/Morg_BG1/>Morgul</a> (pas cheaté mais inclut une nouvelle zone)
 
 #### <ins>Arenes  de combat :<ins>
 - <a href=https://github.com/Plutonium-X/FIGHT_Umbra_Of_T.R.O.W>Umbra of T.R.O.W</a>  
@@ -63,7 +64,7 @@ This module allows you to install certain mods designed for BG2EE on IWDEE. It w
 2: Install the IWDisator. It prepares all the mods.  
 3: Install all the mods for BG2EE that you have planned. They are ready. 
 
-### <ins>Modules that the Iwdisateur can convert:<ins>
+### <ins>Modules that the IWDisator can convert:<ins>
 #### <ins>Shops:<ins>
 - <a href=https://akadis.baldursgateworld.fr/Mystigan/MystiganFr.html>Mystigan the merchant</a>  
 - <a href=https://github.com/Spellhold-Studios/Unusual-Oddities-Shop>The Unusual Oddities Shop</a>  
@@ -91,6 +92,7 @@ This module allows you to install certain mods designed for BG2EE on IWDEE. It w
 - <a href=https://github.com/Plutonium-X/1D_NPC_Malthis>Malthis</a>  
 - <a href=https://github.com/Plutonium-X/1D_NPC_Horace>Horace</a>  
 - <a href=https://github.com/Plutonium-X/1D_NPC_Xardas>Xardas</a>
+- <a href=https://github.com/toopok4k3/Morg_BG1/>Morgul</a> (not cheated, but includes a new area)
 
 #### <ins>Battle arenas:<ins>
 - <a href=https://github.com/Plutonium-X/FIGHT_Umbra_Of_T.R.O.W>Umbra of T.R.O.W</a>  
