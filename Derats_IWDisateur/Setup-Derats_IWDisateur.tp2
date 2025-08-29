@@ -1,6 +1,6 @@
 BACKUP ~Derats_IWDisateur/Backup~
 AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
-VERSION ~v3~
+VERSION ~v3.1~
 
 LANGUAGE ~Francais~
 	~French~
@@ -204,15 +204,15 @@ REPLACE_TEXTUALLY "book08~ position=~LAST~ flags=~identified~
     END // Existing item" "book08~ position=~LAST~ flags=~identified~
     END // Existing item
 	/*"
-REPLACE_TEXTUALLY ~// Bam for épée de Baldurien 
-  END~ ~// Bam for épée de Baldurien 
+REPLACE_TEXTUALLY ~// Bam for Ã©pÃ©e de Baldurien 
+  END~ ~// Bam for Ã©pÃ©e de Baldurien 
   END
   */~  
 END
 
-//Wares Of The Planes - Tout fait - ce n'est PAS juste un magasin, et lui supprimer ci et ça parce que ça n'est pas possible dans IWD c'est le massacrer.
-//Trovador REO - "Tout fait" - à tellement blasté mon IWDEE que même après désinstallation mes sauvegardes ne se chargeaient plus.
-//Genwas Kaufmannsmod - Essayé, vraiment très bof.
+//Wares Of The Planes - Tout fait - ce n'est PAS juste un magasin, et lui supprimer ci et Ã§a parce que Ã§a n'est pas possible dans IWD c'est le massacrer.
+//Trovador REO - "Tout fait" - Ã  tellement blastÃ© mon IWDEE que mÃªme aprÃ¨s dÃ©sinstallation mes sauvegardes ne se chargeaient plus.
+//Genwas Kaufmannsmod - EssayÃ©, vraiment trÃ¨s bof.
 
 
 ///////////////////////////  Objets et sorts  ///////////////////////////
@@ -299,7 +299,7 @@ REPLACE_TEXTUALLY ~protagonist~ ~LastTalkedToBy~
 END
 
 
-///////////////////////////  One Day Npcs (cheatés)  ///////////////////////////
+///////////////////////////  One Day Npcs (cheatÃ©s)  ///////////////////////////
 
 ACTION_IF DIRECTORY_EXISTS ~Horace~ BEGIN //Horace
 COPY ~Horace/Setup-Horace.tp2~ ~Horace/Setup-Horace.tp2~
@@ -562,17 +562,17 @@ COPY ~k4morgul/baf/k4duegar.baf~ ~k4morgul/baf/k4duegar.baf~ REPLACE_TEXTUALLY ~
 END
 
 
-//Thael - Sa quête : rechercher et trouver Sendaï.
-//Ninafer - Référence Irenicus, Imoen
-//Mhoram - Référence enfant de Bhaal, référence liche du pont
-//Mawgul - Référence enfant de Bhaal
-//Mur'Neth - Une fois les banters enlevés il ne lui reste plus grand chose.
+//Thael - Sa quÃªte : rechercher et trouver SendaÃ¯.
+//Ninafer - RÃ©fÃ©rence Irenicus, Imoen
+//Mhoram - RÃ©fÃ©rence enfant de Bhaal, rÃ©fÃ©rence liche du pont
+//Mawgul - RÃ©fÃ©rence enfant de Bhaal
+//Mur'Neth - Une fois les banters enlevÃ©s il ne lui reste plus grand chose.
 
-//TOUS les pnjs "normaux" : Références enfant de Bhaal, Irenicus, Imoen, zones de SOA/TOB.
+//TOUS les pnjs "normaux" : RÃ©fÃ©rences enfant de Bhaal, Irenicus, Imoen, zones de SOA/TOB.
 
 
 
-///////////////////////////  Quêtes  ///////////////////////////
+///////////////////////////  QuÃªtes  ///////////////////////////
 
 
 ACTION_IF DIRECTORY_EXISTS ~tod~ BEGIN //Tower of Deception
@@ -698,9 +698,9 @@ COPY ~DC/English/O#QUEST.tra~ ~DC/English/O#QUEST.tra~
 	 REPLACE_TEXTUALLY ~the slums~ ~Lonelywood~
 COPY ~DC/French/O#QUEST.tra~ ~DC/French/O#QUEST.tra~
 	 ~DC/French/setup-DC.tra~ ~DC/French/setup-DC.tra~
-	 REPLACE_TEXTUALLY ~à Athkatla~ ~au Bois isolé~
-	 REPLACE_TEXTUALLY ~sur le toit de la Couronne de Cuivre~ ~au Bois isolé~
-	 REPLACE_TEXTUALLY ~des Bas-Quartiers~ ~du Bois isolé~
+	 REPLACE_TEXTUALLY ~Ã  Athkatla~ ~au Bois isolÃ©~
+	 REPLACE_TEXTUALLY ~sur le toit de la Couronne de Cuivre~ ~au Bois isolÃ©~
+	 REPLACE_TEXTUALLY ~des Bas-Quartiers~ ~du Bois isolÃ©~
 COPY ~DC/German/O#QUEST.tra~ ~DC/French/O#QUEST.tra~
 	 ~DC/German/setup-DC.tra~ ~DC/French/setup-DC.tra~
 	 REPLACE_TEXTUALLY ~Athkatla~ ~Waldheim~
@@ -710,16 +710,16 @@ COPY ~DC/German/O#QUEST.tra~ ~DC/French/O#QUEST.tra~
 	 REPLACE_TEXTUALLY ~den slums~ ~von Waldheim~
 END
 
-//The sellsword _ - Quasi tout fait - Demande comme ressources des fichiers DLG dont aucune entrée ne correspond dans IWD. C'est mort.
+//The sellsword _ - Quasi tout fait - Demande comme ressources des fichiers DLG dont aucune entrÃ©e ne correspond dans IWD. C'est mort.
 //Dark Tiding - worlmap
 //Throne of the Mad God - worlmap
 //Call of the Lost Goddess - worlmap
 //Secret of Bone Hill - Mod Worlmap requis
-//Loretaker - Entrée dans les égouts qui mène... à des égouts.
-//Tous les mods de quêtes de Lava, NON. Et ceux que j'avais prévu de traduire, NON aussi.
+//Loretaker - EntrÃ©e dans les Ã©gouts qui mÃ¨ne... Ã  des Ã©gouts.
+//Tous les mods de quÃªtes de Lava, NON. Et ceux que j'avais prÃ©vu de traduire, NON aussi.
 
 
-///////////////////////////  Arènes  ///////////////////////////
+///////////////////////////  ArÃ¨nes  ///////////////////////////
 
 ACTION_IF DIRECTORY_EXISTS ~UoT~ BEGIN //Arena of T.R.O.W
 COPY ~Uot/Setup-UoT.tp2~ ~Uot/Setup-UoT.tp2~
@@ -732,6 +732,14 @@ END
 
 ACTION_IF DIRECTORY_EXISTS ~A7-TestYourMettle~ BEGIN //Test Your Mettle
 COPY ~Derats_IWDisateur/Quests/Mettle/Copy~ ~Override~
+APPEND ~Spell.ids~ ~3554 GAIN_ONE_CHA_PERMANENT
+3555 GAIN_ONE_WIS_PERMANENT
+3556 GAIN_ONE_INT_PERMANENT
+3557 GAIN_ONE_DEX_PERMANENT
+3558 ERINYES_CHARM
+3590 GAIN_ONE_CON_PERMANENT
+3591 GAIN_ONE_STR_PERMANENT
+3672 QUICK_INVISIBLE
 COPY ~A7-TestYourMettle/A7-TestYourMettle.tp2~ ~A7-TestYourMettle/A7-TestYourMettle.tp2~
 REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
 REPLACE_TEXTUALLY ~ar0411.are~ ~ar9300.are~
@@ -764,10 +772,10 @@ END
 
 
 
-//Duality's Odd Quest (Imnesvale) - crée des faux maires, des faux vendeurs, etc.... //Recréer faux maires de Bois isolé ?
-//Tomoyo and the Underground City - Incroyable le nombre de références/ressources qu'il utilise ! Pour un mod somme toute nul....
+//Duality's Odd Quest (Imnesvale) - crÃ©e des faux maires, des faux vendeurs, etc.... //RecrÃ©er faux maires de Bois isolÃ© ?
+//Tomoyo and the Underground City - Incroyable le nombre de rÃ©fÃ©rences/ressources qu'il utilise ! Pour un mod somme toute nul....
 //Tales of Anegh 
-//Pits of Despair - A besoin de BEAUCOUP de ressources de BG2EE n’étant pas dans IWDEE.
+//Pits of Despair - A besoin de BEAUCOUP de ressources de BG2EE nÂ’Ã©tant pas dans IWDEE.
 
 
 ///////////////////////////  Divers  ///////////////////////////
@@ -792,3 +800,4 @@ ACTION_IF DIRECTORY_EXISTS ~SelphiraTweaks~ BEGIN //Selphira Tweaks
 COPY ~SelphiraTweaks/SelphiraTweaks.tp2~ ~SelphiraTweaks/SelphiraTweaks.tp2~
 REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
 END
+
