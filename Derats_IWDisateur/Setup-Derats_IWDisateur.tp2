@@ -1,6 +1,6 @@
 BACKUP ~Derats_IWDisateur/Backup~
 AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
-VERSION ~v3.2~
+VERSION ~v3.1~
 
 LANGUAGE ~Francais~
 	~French~
@@ -230,8 +230,8 @@ REPLACE_TEXTUALLY ~temlath.sto~ ~kutemple.sto~
 REPLACE_TEXTUALLY ~TRGENI01.sto~ ~de_lib.sto~
 REPLACE_TEXTUALLY ~UDDROW22.sto~ ~ldd_nym.sto~
 REPLACE_TEXTUALLY ~FFBART.sto~ ~Kuinn3.sto~
-REPLACE_TEXTUALLY "Kuinn3.sto~
-WRITE_LONG 0x10 THIS | BIT0 | BIT1 | BIT2 | BIT12" "Kuinn3.sto~"
+REPLACE_TEXTUALLY "ldd_nym.sto~
+WRITE_LONG 0x10 THIS | BIT0 | BIT1 | BIT2 | BIT12" "ldd_nym.sto~"
 END
 
 ACTION_IF DIRECTORY_EXISTS ~Isaac's_Missile_Storm~ BEGIN //Isaac's Missile Storm
@@ -800,5 +800,6 @@ ACTION_IF DIRECTORY_EXISTS ~SelphiraTweaks~ BEGIN //Selphira Tweaks
 COPY ~SelphiraTweaks/SelphiraTweaks.tp2~ ~SelphiraTweaks/SelphiraTweaks.tp2~
 REPLACE_TEXTUALLY ~bg2ee eet~ ~bg2ee iwdee eet~
 END
+
 
 
