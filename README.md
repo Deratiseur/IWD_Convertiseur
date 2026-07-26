@@ -61,6 +61,42 @@ This module allows you to install certain mods designed for BG2EE on IWDEE. It w
 
 - <a href=https://github.com/The-Gate-Project/Saradas_Magic>Saradas Magic (BGEE version)</a>
 
+#### <ins>Cheated One Day NPCs:</ins>
+
+- <a href=https://github.com/Plutonium-X/1D_NPC_Larsha>Larsha</a>
+
+- <a href=https://github.com/Plutonium-X/1D_NPC_Moddie>Moddie</a>
+
+- <a href=https://github.com/Plutonium-X/1D_NPC_Chiara>Chiara</a>
+
+- <a href=https://github.com/Plutonium-X/1D_NPC_Malthis>Malthis</a>
+
+- <a href=https://github.com/Plutonium-X/1D_NPC_Horace>Horace</a>
+
+- <a href=https://github.com/Plutonium-X/1D_NPC_Xardas>Xardas</a>
+
+- <a href=https://github.com/toopok4k3/Morg_BG1/>Morgul</a> (not cheated, but includes a new area)
+
+#### <ins>Battle arenas:</ins>
+
+- <a href=https://github.com/Plutonium-X/FIGHT_Umbra_Of_T.R.O.W>Umbra of T.R.O.W</a>
+
+- <a href=https://github.com/Argent77/A7-TestYourMettle>Test your mettle</a>
+
+#### <ins>Quests:</ins>
+
+- <a href=https://github.com/Black-Wyrm-Lair/TowerOfDeception>Tower of Deception</a>
+
+- <a href=https://github.com//Pocket-Plane-Group/Dungeon_Crawl>Dungeon Crawl</a>
+
+#### <ins>Misc:</ins>
+
+- <a href=https://github.com/Endarire/W_Packmule/>W_Packmule</a>
+
+- <a href=https://github.com/The-Gate-Project/RevisitOldHaunt>Revisit The Old Haunt</a>
+
+- <a href=https://github.com/Selphira/SelphiraTweaks>Selphira Tweaks</a>
+
 </td>
 
 <td width="50%" valign="top">
@@ -112,6 +148,42 @@ Ce module vous permet d'installer sur IWDEE certains mods prévus pour BG2EE. Il
 - <a href=https://github.com/Spellhold-Studios/Red-Dragon-Summoning-Spell>Red Dragon Summoning</a>
 
 - <a href=https://github.com/The-Gate-Project/Saradas_Magic>Saradas Magic (version BGEE)</a>
+
+#### <ins>PNJ One Day cheatés :</ins>
+
+- <a href=https://github.com/Plutonium-X/1D_NPC_Larsha>Larsha</a>
+
+- <a href=https://github.com/Plutonium-X/1D_NPC_Moddie>Moddie</a>
+
+- <a href=https://github.com/Plutonium-X/1D_NPC_Chiara>Chiara</a>
+
+- <a href=https://github.com/Plutonium-X/1D_NPC_Malthis>Malthis</a>
+
+- <a href=https://github.com/Plutonium-X/1D_NPC_Horace>Horace</a>
+
+- <a href=https://github.com/Plutonium-X/1D_NPC_Xardas>Xardas</a>
+
+- <a href=https://github.com/toopok4k3/Morg_BG1/>Morgul</a> (pas cheaté mais inclut une nouvelle zone)
+
+#### <ins>Arènes de combat :</ins>
+
+- <a href=https://github.com/Plutonium-X/FIGHT_Umbra_Of_T.R.O.W>Umbra of T.R.O.W</a>
+
+- <a href=https://github.com/Argent77/A7-TestYourMettle>Test your mettle</a>
+
+#### <ins>Quêtes :</ins>
+
+- <a href=https://github.com/Black-Wyrm-Lair/TowerOfDeception>Tower of Deception</a>
+
+- <a href=https://github.com//Pocket-Plane-Group/Dungeon_Crawl>Dungeon Crawl</a>
+
+#### <ins>Divers :</ins>
+
+- <a href=https://github.com/Endarire/W_Packmule/>W_Packmule</a>
+
+- <a href=https://github.com/The-Gate-Project/RevisitOldHaunt>Revisit The Old Haunt</a>
+
+- <a href=https://github.com/Selphira/SelphiraTweaks>Selphira Tweaks</a>
 
 </td>
 </tr>
